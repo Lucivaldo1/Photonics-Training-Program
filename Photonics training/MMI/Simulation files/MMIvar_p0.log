@@ -1,0 +1,43 @@
+Ansys Lumerical 2022 R1.3 Variational FDTD Solver Version 7.19.3016 (Windows 64bit)
+ expires (month/day/year): Permanent
+using config file: Ansys Licensing set with ANSYSLMD_LICENSE_FILE
+license host: 1055@melicense.embedded.ufcg.edu.br
+current time: sáb nov 30 21:38:08 2024
+Running on host: DESKTOP-FOTONICA
+All processes are communicating and ready to proceed to simulation...
+Running lms file: C:\Program Files\Lumerical\v221\bin\varfdtd-engine-msmpi.exe -t 1 -remote C:/Users/luciv/Documents/Lucivaldo/MMI/MMIvar.lms
+Starting meshing
+Simulation size in gridpoints: 1 x 15002 x 1
+Refined 0 mesh cells (0%)
+Completed meshing!
+Meshing complete in 0.03125 seconds of CPU time
+Starting meshing
+Simulation size in gridpoints: 1 x 15002 x 1
+Refined 0 mesh cells (0%)
+Completed meshing!
+Meshing complete in 0.015625 seconds of CPU time
+Starting meshing
+Simulation size in gridpoints: 1 x 15002 x 1
+Refined 0 mesh cells (0%)
+Completed meshing!
+Meshing complete in 0.015625 seconds of CPU time
+Starting meshing
+Simulation size in gridpoints: 1 x 36 x 1
+Refined 0 mesh cells (0%)
+Completed meshing!
+Meshing complete in 0 seconds of CPU time
+Starting meshing
+Simulation size in gridpoints: 1 x 36 x 1
+Refined 0 mesh cells (0%)
+Completed meshing!
+Meshing complete in 0 seconds of CPU time
+Starting meshing
+Simulation size in gridpoints: 1 x 36 x 1
+Refined 0 mesh cells (0%)
+Completed meshing!
+Meshing complete in 0 seconds of CPU time
+number of processors is 24
+processors are distributed as: 24x1x1
+Running TE Simulation
+Starting meshing
+Simulation size in gridpoints: 9999 x 19311 x 1

@@ -1,0 +1,34 @@
+wl = linspace(1500e-9, 1600e-9, 10);
+
+neff = matrix(1, length(wl));
+neff2 = matrix(1, length(wl));
+neff3 = matrix(1, length(wl));
+neff4 = matrix(1, length(wl));
+
+ng1 = matrix(1, length(wl));
+ng2 = matrix(1, length(wl));
+ng3 = matrix(1, length(wl));
+ng4 = matrix(1, length(wl));
+
+for(i=1:length(wl)){
+    switchtolayout;
+    setnamed('FDE', 'wavelength', wl(i));
+    findmodes;  
+    #effective index  
+    neff(i) = real(getdata("mode1", "neff"));
+    neff2(i) = real(getdata("mode2", "neff"));
+    neff3(i) = real(getdata("mode3", "neff"));
+    neff4(i) = real(getdata("mode4", "neff"));  
+    #group index
+    ng1(i) = real(getdata("mode1", "ng"));
+    ng2(i) = real(getdata("mode2", "ng"));
+    ng3(i) = real(getdata("mode3", "ng"));
+    ng4(i) = real(getdata("mode4", "ng"));   
+    
+    }
+    
+#Plot do índice efetivo
+
+plot(wl,neff,neff2,neff3,neff4,"wl","neff","neffxwl");
+    
+plot(wl,ng1,ng2,ng3,ng4,"wl","ng","ngxwl");

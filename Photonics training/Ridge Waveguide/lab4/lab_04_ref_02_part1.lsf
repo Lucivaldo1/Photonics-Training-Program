@@ -1,0 +1,36 @@
+load("lab_04_ref_02.ldf");
+
+cleardcard;
+
+lambda0 = 1550e-9;
+
+film_h = linspace(0, 500e-9, 10);
+
+neff_TE0 = matrix(1, length(film_h));
+neff_TE1 = matrix(1, length(film_h));
+neff_TM0 = matrix(1, length(film_h));
+neff_TM1 = matrix(1, length(film_h));
+v = matrix(1, length(film_h));
+nf = 3.48;
+ns = 1.44;
+
+for(i=1:length(film_h)){
+    film = film_h(i);
+    switchtolayout;
+    setnamed("film", "y span", film);
+    setnamed("claddy", "y", (film/2) + 110e-9);
+    setnamed("substrate", "y", (-film/2) - 110e-9);
+    
+    setnamed("FDE", "mesh cells y", 500);
+    v(i) = ((2*pi/lambda0) * film * sqrt(nf^2 - ns^2) );
+    
+    findmodes;
+    
+    neff_TE0(i) = real(getdata("mode2",  "neff"));
+    neff_TE1(i) = real(getdata("mode6",  "neff"));
+    neff_TM0(i) = real(getdata("mode1",  "neff"));
+    neff_TM1(i) = real(getdata("mode4",  "neff"));
+    }
+   
+# em 220nm são transmitidos apenas os modos fundamentais, neff > 1.44 
+ plot(film_h,neff_TE0, neff_TE1, neff_TM0, neff_TM1);

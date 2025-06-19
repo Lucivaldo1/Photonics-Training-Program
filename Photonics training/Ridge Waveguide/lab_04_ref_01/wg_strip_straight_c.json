@@ -1,0 +1,133 @@
+{
+  "QA" : 
+  {
+    "parameters" : 
+    {
+      "wavelength" : 
+      {
+        "max" : 1.5650000000000001e-06,
+        "min" : 1.53e-06
+      }
+    },
+    "relative_tolerances" : 
+    {
+      "delay_time" : 0.01,
+      "loss" : 9.9999999999999995e-07,
+      "neff" : 0.01,
+      "ng" : 0.5
+    }
+  },
+  "general" : 
+  {
+    "description" : "Simulated waveguide - C band",
+    "notes" : 
+    {
+      "_data" : 
+      [
+        {
+          "property" : "wavelength_range",
+          "value" : "C-band (1530 - 1565 nm)"
+        },
+        {
+          "property" : "temperature_range",
+          "value" : "Best accuracy between 273 and 373 K"
+        }
+      ],
+      "_type" : "cell"
+    },
+    "prefix" : "WG"
+  },
+  "model_data" : 
+  {
+    "D" : 
+    {
+      "_complex" : false,
+      "_data" : [ 0.0014251574521626624, -0.017528469617665812 ],
+      "_size" : [ 2, 1 ],
+      "_type" : "matrix"
+    },
+    "dneff_dT" : 
+    {
+      "_complex" : false,
+      "_data" : [ 0.001, 0.0001 ],
+      "_size" : [ 2, 1 ],
+      "_type" : "matrix"
+    },
+    "loss" : 
+    {
+      "_complex" : false,
+      "_data" : [ 300.0, 200.0 ],
+      "_size" : [ 2, 1 ],
+      "_type" : "matrix"
+    },
+    "mode_data" : 
+    {
+      "_data" : 
+      [
+        {
+          "ID" : 1.0,
+          "name" : "TE"
+        },
+        {
+          "ID" : 2.0,
+          "name" : "TM"
+        }
+      ],
+      "_type" : "cell"
+    },
+    "neff" : 
+    {
+      "_complex" : false,
+      "_data" : [ 2.3541883084257362, 1.7331911133648896 ],
+      "_size" : [ 2, 1 ],
+      "_type" : "matrix"
+    },
+    "ng" : 
+    {
+      "_complex" : false,
+      "_data" : [ 4.1476702351888166, 3.5441744154323476 ],
+      "_size" : [ 2, 1 ],
+      "_type" : "matrix"
+    },
+    "number_of_taps_estimation" : "disabled",
+    "photonic_model" : "waveguide_simple",
+    "temperature" : 300.0,
+    "wavelength" : 1.55e-06
+  },
+  "parameters" : 
+  {
+    "temperature" : 
+    {
+      "default" : "%temperature%"
+    },
+    "wg_length" : 
+    {
+      "annotate" : 0.0,
+      "default" : 1.0000000000000001e-05,
+      "max" : 1.0,
+      "min" : 0.0,
+      "name" : "wg_length",
+      "unit" : "um",
+      "visible_to_user" : 1.0
+    }
+  },
+  "ports" : 
+  {
+    "opt_1" : 
+    {
+      "dir" : "Bidirectional",
+      "loc" : 0.5,
+      "name" : "opt_1",
+      "order" : 1.0,
+      "pos" : "Left"
+    },
+    "opt_2" : 
+    {
+      "dir" : "Bidirectional",
+      "loc" : 0.5,
+      "name" : "opt_2",
+      "order" : 2.0,
+      "pos" : "Right"
+    }
+  }
+}

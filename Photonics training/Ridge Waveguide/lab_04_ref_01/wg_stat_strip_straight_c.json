@@ -1,0 +1,286 @@
+{
+  "QA" : 
+  {
+    "parameters" : 
+    {
+      "wavelength" : 
+      {
+        "max" : 1.5650000000000001e-06,
+        "min" : 1.53e-06
+      }
+    },
+    "relative_tolerances" : 
+    {
+      "delay_time" : 0.01,
+      "loss" : 9.9999999999999995e-07,
+      "neff" : 0.01,
+      "ng" : 0.5
+    }
+  },
+  "general" : 
+  {
+    "description" : "Foundry strip waveguide - C band",
+    "notes" : 
+    {
+      "_data" : 
+      [
+        {
+          "property" : "wavelength_range",
+          "value" : "C-band (1530 - 1565 nm)"
+        },
+        {
+          "property" : "temperature_range",
+          "value" : "Best accuracy between 273 and 373 K"
+        }
+      ],
+      "_type" : "cell"
+    },
+    "prefix" : "WG"
+  },
+  "model_data" : 
+  {
+    "D" : 
+    {
+      "_complex" : false,
+      "_data" : [ 0.0013977443103073799, -0.016775418824821482 ],
+      "_size" : [ 2, 1 ],
+      "_type" : "matrix"
+    },
+    "dneff_dT" : 
+    {
+      "_complex" : false,
+      "_data" : [ 0.001, 0.0001 ],
+      "_size" : [ 2, 1 ],
+      "_type" : "matrix"
+    },
+    "loss" : 
+    {
+      "_complex" : false,
+      "_data" : [ 300.0, 200.0 ],
+      "_size" : [ 2, 1 ],
+      "_type" : "matrix"
+    },
+    "mode_data" : 
+    {
+      "_data" : 
+      [
+        {
+          "ID" : 1.0,
+          "name" : "TE"
+        },
+        {
+          "ID" : 2.0,
+          "name" : "TM"
+        }
+      ],
+      "_type" : "cell"
+    },
+    "neff" : 
+    {
+      "_complex" : false,
+      "_data" : [ 2.4439814434924667, 1.7743151105620074 ],
+      "_size" : [ 2, 1 ],
+      "_type" : "matrix"
+    },
+    "ng" : 
+    {
+      "_complex" : false,
+      "_data" : [ 4.0502878451752542, 3.6663904651816885 ],
+      "_size" : [ 2, 1 ],
+      "_type" : "matrix"
+    },
+    "number_of_taps_estimation" : "disabled",
+    "photonic_model" : "waveguide_simple",
+    "temperature" : 300.0,
+    "wavelength" : 1.55e-06
+  },
+  "parameters" : 
+  {
+    "temperature" : 
+    {
+      "default" : "%temperature%"
+    },
+    "wg_length" : 
+    {
+      "annotate" : 0.0,
+      "default" : 1.0000000000000001e-05,
+      "max" : 1.0,
+      "min" : 0.0,
+      "name" : "wg_length",
+      "unit" : "um",
+      "visible_to_user" : 1.0
+    }
+  },
+  "ports" : 
+  {
+    "opt_1" : 
+    {
+      "dir" : "Bidirectional",
+      "loc" : 0.5,
+      "name" : "opt_1",
+      "order" : 1.0,
+      "pos" : "Left"
+    },
+    "opt_2" : 
+    {
+      "dir" : "Bidirectional",
+      "loc" : 0.5,
+      "name" : "opt_2",
+      "order" : 2.0,
+      "pos" : "Right"
+    }
+  },
+  "statistical" : 
+  {
+    "QA" : 
+    {
+      "N_trials" : 50.0,
+      "VA_N_trials" : 5.0,
+      "VA_reference_data_available" : 1.0,
+      "absolute_tolerances" : 
+      {
+        "loss" : 0.10000000000000001,
+        "neff" : 0.001,
+        "ng" : 0.089999999999999997
+      },
+      "enable_qa" : 1.0,
+      "reference_data_available" : 1.0
+    },
+    "parameters" : 
+    {
+      "parameter_1" : 
+      {
+        "GLOBAL" : 
+        {
+          "GLOBALGROUP" : "global_delta_height"
+        },
+        "LOCAL" : 
+        {
+          "CORRGROUP" : "corr_delta_height",
+          "distribution" : "normal",
+          "sigma" : 0.80000000000000004
+        },
+        "corners" : 
+        {
+          "_complex" : false,
+          "_data" : [ -2.3999999999999999, 2.3999999999999999 ],
+          "_size" : [ 1, 2 ],
+          "_type" : "matrix"
+        },
+        "mean" : 0.0,
+        "name" : "delta_height",
+        "slope_loss" : 
+        {
+          "_complex" : false,
+          "_data" : [ 0.0, 0.0 ],
+          "_size" : [ 1, 2 ],
+          "_type" : "matrix"
+        },
+        "slope_neff" : 
+        {
+          "_complex" : false,
+          "_data" : [ 0.0074297169189940782, 0.013955462233991245 ],
+          "_size" : [ 2, 1 ],
+          "_type" : "matrix"
+        },
+        "slope_ng" : 
+        {
+          "_complex" : false,
+          "_data" : [ 0.0017744957697320984, 0.061132440005419175 ],
+          "_size" : [ 2, 1 ],
+          "_type" : "matrix"
+        }
+      },
+      "parameter_2" : 
+      {
+        "GLOBAL" : 
+        {
+          "GLOBALGROUP" : "global_delta_width"
+        },
+        "LOCAL" : 
+        {
+          "CORRGROUP" : "corr_delta_width",
+          "distribution" : "normal",
+          "sigma" : 0.80000000000000004
+        },
+        "corners" : 
+        {
+          "_complex" : false,
+          "_data" : [ -2.3999999999999999, 2.3999999999999999 ],
+          "_size" : [ 1, 2 ],
+          "_type" : "matrix"
+        },
+        "mean" : 0.0,
+        "name" : "delta_width",
+        "slope_loss" : 
+        {
+          "_complex" : false,
+          "_data" : [ 0.0, 0.0 ],
+          "_size" : [ 1, 2 ],
+          "_type" : "matrix"
+        },
+        "slope_neff" : 
+        {
+          "_complex" : false,
+          "_data" : [ 0.0063105694491354392, 0.0027763222153984746 ],
+          "_size" : [ 2, 1 ],
+          "_type" : "matrix"
+        },
+        "slope_ng" : 
+        {
+          "_complex" : false,
+          "_data" : [ -0.0067531920678618462, 0.0082230173507080728 ],
+          "_size" : [ 2, 1 ],
+          "_type" : "matrix"
+        }
+      },
+      "parameter_3" : 
+      {
+        "GLOBAL" : 
+        {
+          "beta2" : 1000.0,
+          "distribution" : "pearson4",
+          "gamma1" : 4.0,
+          "sigma" : 20.0
+        },
+        "LOCAL" : 
+        {
+          "beta2" : 1000.0,
+          "distribution" : "pearson4",
+          "gamma1" : 4.0,
+          "sigma" : 15.0
+        },
+        "corners" : 
+        {
+          "_complex" : false,
+          "_data" : [ 60.0, -35.0 ],
+          "_size" : [ 1, 2 ],
+          "_type" : "matrix"
+        },
+        "mean" : 0.0,
+        "name" : "delta_loss",
+        "slope_loss" : 
+        {
+          "_complex" : false,
+          "_data" : [ 1.0, 0.69999999999999996 ],
+          "_size" : [ 1, 2 ],
+          "_type" : "matrix"
+        },
+        "slope_neff" : 
+        {
+          "_complex" : false,
+          "_data" : [ 0.0, 0.0 ],
+          "_size" : [ 1, 2 ],
+          "_type" : "matrix"
+        },
+        "slope_ng" : 
+        {
+          "_complex" : false,
+          "_data" : [ 0.0, 0.0 ],
+          "_size" : [ 1, 2 ],
+          "_type" : "matrix"
+        }
+      }
+    }
+  }
+}

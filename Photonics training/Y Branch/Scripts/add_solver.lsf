@@ -1,0 +1,108 @@
+switchtolayout();
+
+create_y_branch;
+
+#configurações de posicionamento do solver
+solver_x_span = raio*2 + 2e-6;
+solver_y_span = raio*5 + 4e-6;
+solver_z_span = 2e-6;   
+number_of_points = 50;
+test_points = matrix(2,4);
+test_points(1,1)=-2e-6;
+test_points(1,2)=2e-6;
+test_points(1,3)=2e-6;
+test_points(1,4)=-2e-6;
+test_points(2,1)=2e-6;
+test_points(2,2)=-2e-6;
+test_points(2,3)=2e-6;
+test_points(2,4)=-2e-6;
+
+addvarfdtd();
+set("x", raio);
+set("y", -raio);
+set("z", 0);
+set("x span", solver_x_span);
+set("y span", solver_y_span);
+set("z span", solver_z_span);
+set("x0", -5e-6);
+set("background material", "SiO2 (Glass) - Palik");
+set("global monitor frequency points", number_of_points);
+set("test points", test_points);
+
+#fonte
+addmodesource();
+set("injection axis", "x");
+set("x", -0.5e-6);
+set("y", -raio);
+set("y span", y_span_dvc-0.5e-6);
+set("wavelength start", 1500e-9);
+set("wavelength stop", 1600e-9);
+
+#monitores 
+
+addindex();
+set("name", "index");
+set("x", raio);
+set("y", -raio);
+set("z", 0);
+set("x span", solver_x_span);
+set("y span", solver_y_span);
+
+addeffectiveindex();
+set("name", "eff. index");
+set("x", raio);
+set("y", -raio);
+set("z", 0);
+set("x span", solver_x_span);
+set("y span", solver_y_span);
+    
+addprofile();
+set("x", raio);
+set("y", -raio);
+set("z", 0);
+set("x span", solver_x_span);
+set("y span", solver_y_span);
+
+addpower();
+set("name", "in");
+set("monitor type", 5);
+set("x", -0.4e-6);
+set("y", -raio);
+set("y span", y_span_dvc-1e-6);
+set("z span", solver_z_span);    
+
+addpower();
+set("name", "out_1");
+set("monitor type", 5);
+set("x", raio*2 +0.5e-6);
+set("y", raio);
+set("y span", y_span_dvc-1e-6);
+set("z span", solver_z_span);    
+
+addpower();
+set("name", "out_2");
+set("monitor type", 5);
+set("x", raio*2 +0.5e-6);
+set("y", -raio*3);
+set("y span", y_span_dvc-1e-6);
+set("z span", solver_z_span);    
+
+
+#fonte
+addmodesource();
+set("injection axis", "x");
+set("direction", "Backward");
+set("x", raio*2 +0.5e-6);
+set("y", raio);
+set("y span", y_span_dvc-0.5e-6);
+set("wavelength start", 1500e-9);
+set("wavelength stop", 1600e-9);
+#fonte
+addmodesource();
+set("injection axis", "x");
+set("direction", "Backward");
+set("x", raio*2 +0.5e-6);
+set("y", -raio*3);
+set("y span", y_span_dvc-0.5e-6);
+set("wavelength start", 1500e-9);
+set("wavelength stop", 1600e-9);

@@ -1,0 +1,1456 @@
+
+########################################################START OF LOG SESSION##############################################################
+
+CURRENT DATE AND TIME: 06/06/2025 15:18:45
+
+CML Compiler executable path: C:\Program Files\Lumerical\v242\CML_Compiler\bin\\cml-compiler.pyc
+Executed command: cml-compiler library -t Foundry_X.json 
+06/06/2025 15:18:45 -----------------------------------------------
+06/06/2025 15:18:45 Lumerical CML Compiler - Version: 3.9.3941
+06/06/2025 15:18:45 Compiled with INTERCONNECT - Version: 9.14.3941
+06/06/2025 15:18:45 -----------------------------------------------
+06/06/2025 15:18:45 Building compact models...
+06/06/2025 15:18:49 [01/66] apd_c
+06/06/2025 15:18:49            Validating apd_c.json source data... PASSED!
+
+06/06/2025 15:18:50            Building compact model... SUCCESS!
+
+06/06/2025 15:18:50 [02/66] apd_stat_c
+06/06/2025 15:18:50            Validating apd_stat_c.json source data... PASSED!
+
+06/06/2025 15:18:50            Building compact model... SUCCESS!
+
+06/06/2025 15:18:50 [03/66] custom_veriloga_eps
+06/06/2025 15:18:50            Validating custom_veriloga_eps.json source data... PASSED!
+
+06/06/2025 15:18:50            Building compact model... SKIPPED! INTERCONNECT CML is not supported for the current element.
+
+06/06/2025 15:18:50 [04/66] dc_strip_te_c
+06/06/2025 15:18:50            Validating dc_strip_te_c.json source data... PASSED!
+
+06/06/2025 15:18:50            Building compact model... SUCCESS!
+
+06/06/2025 15:18:50 [05/66] eam_te_c
+06/06/2025 15:18:50            Validating eam_te_c.json source data... PASSED!
+
+06/06/2025 15:18:50            Building compact model... SUCCESS!
+
+06/06/2025 15:18:50 [06/66] fiber_array_8x8_stat_c
+06/06/2025 15:18:50            Validating fiber_array_8x8_stat_c.json source data... PASSED!
+
+06/06/2025 15:18:50            Building compact model... SUCCESS!
+
+06/06/2025 15:18:50 [07/66] gc_fitted_stat_te_c
+06/06/2025 15:18:50            Validating gc_fitted_stat_te_c.json source data... PASSED!
+
+06/06/2025 15:18:50            Building compact model... SUCCESS!
+
+06/06/2025 15:18:51 [08/66] gc_fitted_te_c
+06/06/2025 15:18:51            Validating gc_fitted_te_c.json source data... PASSED!
+
+06/06/2025 15:18:51            Building compact model... SUCCESS!
+
+06/06/2025 15:18:51 [09/66] gc_raw_spar_stat_te_c
+06/06/2025 15:18:51            Validating gc_raw_spar_stat_te_c.json source data... PASSED!
+
+06/06/2025 15:18:51            Building compact model... SUCCESS!
+
+06/06/2025 15:18:51 [10/66] gc_strip_te_c
+06/06/2025 15:18:51            Validating gc_strip_te_c.json source data... PASSED!
+
+06/06/2025 15:18:51            Building compact model... SUCCESS!
+
+06/06/2025 15:18:51 [11/66] mmi_1x2_stat_strip_te_c
+06/06/2025 15:18:51            Validating mmi_1x2_stat_strip_te_c.json source data... PASSED!
+
+06/06/2025 15:18:51            Building compact model... SUCCESS!
+
+06/06/2025 15:18:51 [12/66] mmi_1x2_strip_te_c
+06/06/2025 15:18:51            Validating mmi_1x2_strip_te_c.json source data... PASSED!
+
+06/06/2025 15:18:51            Building compact model... SUCCESS!
+
+06/06/2025 15:18:51 [13/66] mmi_1x2_strip_te_c_thermal
+06/06/2025 15:18:51            Validating mmi_1x2_strip_te_c_thermal.json source data... PASSED!
+
+06/06/2025 15:18:51            Building compact model... SUCCESS!
+
+06/06/2025 15:18:51 [14/66] mzi_thermal_2x2_te_c
+06/06/2025 15:18:51            Validating mzi_thermal_2x2_te_c.json source data... PASSED!
+
+06/06/2025 15:18:51            Building compact model... SUCCESS!
+
+06/06/2025 15:18:51 [15/66] mzi_thermal_unbalanced_te_c
+06/06/2025 15:18:51            Validating mzi_thermal_unbalanced_te_c.json source data... PASSED!
+
+06/06/2025 15:18:51            Building compact model... SUCCESS!
+
+06/06/2025 15:18:51 [16/66] mzm_2x2_stat_fom_te_c
+06/06/2025 15:18:51            Validating mzm_2x2_stat_fom_te_c.json source data... PASSED!
+
+06/06/2025 15:18:51            Building compact model... SUCCESS!
+
+06/06/2025 15:18:52 [17/66] mzm_2x2_te_c
+06/06/2025 15:18:52            Validating mzm_2x2_te_c.json source data... PASSED!
+
+06/06/2025 15:18:52            Building compact model... SUCCESS!
+
+06/06/2025 15:18:52 [18/66] mzm_balanced_te_c
+06/06/2025 15:18:52            Validating mzm_balanced_te_c.json source data... PASSED!
+
+06/06/2025 15:18:52            Building compact model... SUCCESS!
+
+06/06/2025 15:18:52 [19/66] mzm_stat_fom_unbalanced_te_c
+06/06/2025 15:18:52            Validating mzm_stat_fom_unbalanced_te_c.json source data... PASSED!
+
+06/06/2025 15:18:52            Building compact model... SUCCESS!
+
+06/06/2025 15:18:52 [20/66] mzm_stat_unbalanced_te_c
+06/06/2025 15:18:52            Validating mzm_stat_unbalanced_te_c.json source data... PASSED!
+
+06/06/2025 15:18:52            Building compact model... SUCCESS!
+
+06/06/2025 15:18:52 [21/66] mzm_unbalanced_te_c
+06/06/2025 15:18:52            Validating mzm_unbalanced_te_c.json source data... PASSED!
+
+06/06/2025 15:18:52            Building compact model... SUCCESS!
+
+06/06/2025 15:18:52 [22/66] mzm_unbalanced_tw_te_c
+06/06/2025 15:18:52            Validating mzm_unbalanced_tw_te_c.json source data... PASSED!
+
+06/06/2025 15:18:52            Building compact model... SUCCESS!
+
+06/06/2025 15:18:52 [23/66] pd_c
+06/06/2025 15:18:52            Validating pd_c.json source data... PASSED!
+
+06/06/2025 15:18:52            Building compact model... SUCCESS!
+
+06/06/2025 15:18:52 [24/66] pd_harmonic
+06/06/2025 15:18:52            Validating pd_harmonic.json source data... PASSED!
+
+06/06/2025 15:18:52            Building compact model... SUCCESS!
+
+06/06/2025 15:18:53 [25/66] pd_pcell_c
+06/06/2025 15:18:53            Validating pd_pcell_c.json source data... PASSED!
+
+06/06/2025 15:18:53            Building compact model... SUCCESS!
+
+06/06/2025 15:18:53 [26/66] pd_pcell_stat_c
+06/06/2025 15:18:53            Validating pd_pcell_stat_c.json source data... PASSED!
+
+06/06/2025 15:18:53            Building compact model... SUCCESS!
+
+06/06/2025 15:18:53 [27/66] pd_stat_c
+06/06/2025 15:18:53            Validating pd_stat_c.json source data... PASSED!
+
+06/06/2025 15:18:53            Building compact model... SUCCESS!
+
+06/06/2025 15:18:53 [28/66] pdc_strip_c
+06/06/2025 15:18:53            Validating pdc_strip_c.json source data... PASSED!
+
+06/06/2025 15:18:53            Building compact model... SUCCESS!
+
+06/06/2025 15:18:54 [29/66] ps_pin_te_c
+06/06/2025 15:18:54            Validating ps_pin_te_c.json source data... PASSED!
+
+06/06/2025 15:18:54            Building compact model... SUCCESS!
+
+06/06/2025 15:18:54 [30/66] ps_pn_stat_te_c
+06/06/2025 15:18:54            Validating ps_pn_stat_te_c.json source data... PASSED!
+
+06/06/2025 15:18:54            Building compact model... SUCCESS!
+
+06/06/2025 15:18:54 [31/66] ps_pn_te_c
+06/06/2025 15:18:54            Validating ps_pn_te_c.json source data... PASSED!
+
+06/06/2025 15:18:54            Building compact model... SUCCESS!
+
+06/06/2025 15:18:54 [32/66] ps_pn_tw_te_c
+06/06/2025 15:18:54            Validating ps_pn_tw_te_c.json source data... PASSED!
+
+06/06/2025 15:18:54            Building compact model... SUCCESS!
+
+06/06/2025 15:18:54 [33/66] ps_thermal_stat_te_c
+06/06/2025 15:18:54            Validating ps_thermal_stat_te_c.json source data... PASSED!
+
+06/06/2025 15:18:54            Building compact model... SUCCESS!
+
+06/06/2025 15:18:54 [34/66] ps_thermal_te_c
+06/06/2025 15:18:54            Validating ps_thermal_te_c.json source data... PASSED!
+
+06/06/2025 15:18:54            Building compact model... SUCCESS!
+
+06/06/2025 15:18:54 [35/66] ptaper_pr_c
+06/06/2025 15:18:54            Validating ptaper_pr_c.json source data... PASSED!
+
+06/06/2025 15:18:54            Building compact model... SUCCESS!
+
+06/06/2025 15:18:54 [36/66] ptaper_strip_c
+06/06/2025 15:18:54            Validating ptaper_strip_c.json source data... PASSED!
+
+06/06/2025 15:18:54            Building compact model... SUCCESS!
+
+06/06/2025 15:18:54 [37/66] rm_db_pcell_strip_te_c
+06/06/2025 15:18:54            Validating rm_db_pcell_strip_te_c.json source data... PASSED!
+
+06/06/2025 15:18:54            Building compact model... SUCCESS!
+
+06/06/2025 15:18:55 [38/66] rm_db_stat_fom_strip_te_c
+06/06/2025 15:18:55            Validating rm_db_stat_fom_strip_te_c.json source data... PASSED!
+
+06/06/2025 15:18:55            Building compact model... SUCCESS!
+
+06/06/2025 15:18:55 [39/66] rm_db_strip_te_c
+06/06/2025 15:18:55            Validating rm_db_strip_te_c.json source data... PASSED!
+
+06/06/2025 15:18:55            Building compact model... SUCCESS!
+
+06/06/2025 15:18:55 [40/66] rm_stat_fom_strip_te_c
+06/06/2025 15:18:55            Validating rm_stat_fom_strip_te_c.json source data... PASSED!
+
+06/06/2025 15:18:55            Building compact model... SUCCESS!
+
+06/06/2025 15:18:55 [41/66] rm_stat_strip_te_c
+06/06/2025 15:18:55            Validating rm_stat_strip_te_c.json source data... PASSED!
+
+06/06/2025 15:18:55            Building compact model... SUCCESS!
+
+06/06/2025 15:18:55 [42/66] rm_strip_te_c
+06/06/2025 15:18:55            Validating rm_strip_te_c.json source data... PASSED!
+
+06/06/2025 15:18:55            Building compact model... SUCCESS!
+
+06/06/2025 15:18:56 [43/66] rr_stat_strip_te_c
+06/06/2025 15:18:56            Validating rr_stat_strip_te_c.json source data... PASSED!
+
+06/06/2025 15:18:56            Building compact model... SUCCESS!
+
+06/06/2025 15:18:56 [44/66] rr_strip_te_c
+06/06/2025 15:18:56            Validating rr_strip_te_c.json source data... PASSED!
+
+06/06/2025 15:18:56            Building compact model... SUCCESS!
+
+06/06/2025 15:18:57 [45/66] rs_strip_te_c
+06/06/2025 15:18:57            Validating rs_strip_te_c.json source data... PASSED!
+
+06/06/2025 15:18:57            Building compact model... SUCCESS!
+
+06/06/2025 15:18:57 [46/66] scripted_grating_stat
+06/06/2025 15:18:57            Validating scripted_grating_stat.json source data... PASSED!
+
+06/06/2025 15:18:57            Building compact model... SUCCESS!
+
+06/06/2025 15:18:57 [47/66] scripted_wg
+06/06/2025 15:18:57            Validating scripted_wg.json source data... PASSED!
+
+06/06/2025 15:18:57            Building compact model... SUCCESS!
+
+06/06/2025 15:18:57 [48/66] thermal_switch_2x2_stat_te_c
+06/06/2025 15:18:57            Validating thermal_switch_2x2_stat_te_c.json source data... PASSED!
+
+06/06/2025 15:18:57            Building compact model... SUCCESS!
+
+06/06/2025 15:18:57 [49/66] thermal_switch_2x2_te_c
+06/06/2025 15:18:57            Validating thermal_switch_2x2_te_c.json source data... PASSED!
+
+06/06/2025 15:18:57            Building compact model... SUCCESS!
+
+06/06/2025 15:18:57 [50/66] thermal_switch_stat_te_c
+06/06/2025 15:18:57            Validating thermal_switch_stat_te_c.json source data... PASSED!
+
+06/06/2025 15:18:57            Building compact model... SUCCESS!
+
+06/06/2025 15:18:57 [51/66] thermal_switch_te_c
+06/06/2025 15:18:57            Validating thermal_switch_te_c.json source data... PASSED!
+
+06/06/2025 15:18:57            Building compact model... SUCCESS!
+
+06/06/2025 15:18:58 [52/66] voa_stat_te_c
+06/06/2025 15:18:58            Validating voa_stat_te_c.json source data... PASSED!
+
+06/06/2025 15:18:58            Building compact model... SUCCESS!
+
+06/06/2025 15:18:59 [53/66] wg_back_annotation
+06/06/2025 15:18:59            Validating wg_back_annotation.json source data... PASSED!
+
+06/06/2025 15:18:59            Building compact model... SUCCESS!
+
+06/06/2025 15:18:59 [54/66] wg_backscatter
+06/06/2025 15:18:59            Validating wg_backscatter.json source data... PASSED!
+
+06/06/2025 15:18:59            Building compact model... SUCCESS!
+
+06/06/2025 15:18:59 [55/66] wg_bend_90
+06/06/2025 15:18:59            Validating wg_bend_90.json source data... PASSED!
+
+06/06/2025 15:18:59            Building compact model... SUCCESS!
+
+06/06/2025 15:18:59 [56/66] wg_connector
+06/06/2025 15:18:59            Validating wg_connector.json source data... PASSED!
+
+06/06/2025 15:18:59            Building compact model... SUCCESS!
+
+06/06/2025 15:18:59 [57/66] wg_stat_strip_straight_c
+06/06/2025 15:18:59            Validating wg_stat_strip_straight_c.json source data... PASSED!
+
+06/06/2025 15:18:59            Building compact model... SUCCESS!
+
+06/06/2025 15:18:59 [58/66] wg_stat_strip_straight_parameterized
+06/06/2025 15:18:59            Validating wg_stat_strip_straight_parameterized.json source data... PASSED!
+
+06/06/2025 15:18:59            Building compact model... SUCCESS!
+
+06/06/2025 15:18:59 [59/66] wg_strip_arc_parameterized
+06/06/2025 15:18:59            Validating wg_strip_arc_parameterized.json source data... PASSED!
+
+06/06/2025 15:18:59            Building compact model... SUCCESS!
+
+06/06/2025 15:18:59 [60/66] wg_strip_sbend_parameterized
+06/06/2025 15:18:59            Validating wg_strip_sbend_parameterized.json source data... PASSED!
+
+06/06/2025 15:18:59            Building compact model... SUCCESS!
+
+06/06/2025 15:19:00 [61/66] wg_strip_straight_c
+06/06/2025 15:19:00            Validating wg_strip_straight_c.json source data... PASSED!
+
+06/06/2025 15:19:00            Building compact model... SUCCESS!
+
+06/06/2025 15:19:00 [62/66] wg_strip_straight_parameterized
+06/06/2025 15:19:00            Validating wg_strip_straight_parameterized.json source data... PASSED!
+
+06/06/2025 15:19:00            Building compact model... SUCCESS!
+
+06/06/2025 15:19:00 [63/66] container_element_child1
+06/06/2025 15:19:00            Validating container_element_child1.json source data... PASSED!
+
+06/06/2025 15:19:00            Building compact model... SUCCESS!
+
+06/06/2025 15:19:00 [64/66] container_element_child2
+06/06/2025 15:19:00            Validating container_element_child2.json source data... PASSED!
+
+06/06/2025 15:19:00            Building compact model... SUCCESS!
+
+06/06/2025 15:19:00 [65/66] container_example
+06/06/2025 15:19:00            Validating container_example.json source data... PASSED!
+
+06/06/2025 15:19:00            Building compact model... SUCCESS!
+
+06/06/2025 15:19:00 [66/66] compound_rm_stat
+06/06/2025 15:19:00            Validating compound_rm_stat.json source data... PASSED!
+
+06/06/2025 15:19:00            Building compact model... SUCCESS!
+
+06/06/2025 15:19:00 "custom_MZM" added as user-created element.
+06/06/2025 15:19:05 Data validation has 0 warnings and 0 errors. See cml-compiler.state for details.
+06/06/2025 15:19:06 
+06/06/2025 15:19:06 CML Compiler executed with specification defined in Foundry_X.json
+06/06/2025 15:19:06 
+06/06/2025 15:19:06 
+06/06/2025 15:19:06 #############################################
+06/06/2025 15:19:06 Finished compiling your Foundry_X library!
+06/06/2025 15:19:06 CML Compiler outputs are located at C:\Users\luciv\Documents\Lucivaldo\CML\Idea\user_created\Foundry_X\artifacts.
+06/06/2025 15:19:06 
+06/06/2025 15:19:06 	* INTERCONNECT CML files: C:\Users\luciv\Documents\Lucivaldo\CML\Idea\user_created\Foundry_X\artifacts\interconnect
+#########################################################END OF LOG SESSION###############################################################
+
+########################################################START OF LOG SESSION##############################################################
+
+CURRENT DATE AND TIME: 06/06/2025 15:19:08
+
+CML Compiler executable path: C:\Program Files\Lumerical\v242\CML_Compiler\bin\\cml-compiler.pyc
+Executed command: cml-compiler install -t Foundry_X.json 
+06/06/2025 15:19:12 -----------------------------------------------
+06/06/2025 15:19:12 Lumerical CML Compiler - Version: 3.9.3941
+06/06/2025 15:19:12 Compiled with INTERCONNECT - Version: 9.14.3941
+06/06/2025 15:19:12 -----------------------------------------------
+06/06/2025 15:19:12 Installing library...
+06/06/2025 15:19:13 Installed library! Library (CML) information:
+06/06/2025 15:19:13 {
+06/06/2025 15:19:13   "INTERCONNECT Version": "9.14.3941",
+06/06/2025 15:19:13   "Library Name": "Foundry_X",
+06/06/2025 15:19:13   "Library Version": "4.0"
+06/06/2025 15:19:13 }
+06/06/2025 15:19:14 
+06/06/2025 15:19:14 CML Compiler executed with specification defined in Foundry_X.json
+#########################################################END OF LOG SESSION###############################################################
+
+########################################################START OF LOG SESSION##############################################################
+
+CURRENT DATE AND TIME: 06/06/2025 15:19:15
+
+CML Compiler executable path: C:\Program Files\Lumerical\v242\CML_Compiler\bin\\cml-compiler.pyc
+Executed command: cml-compiler test -t Foundry_X.json 
+06/06/2025 15:19:17 -----------------------------------------------
+06/06/2025 15:19:17 Lumerical CML Compiler - Version: 3.9.3941
+06/06/2025 15:19:17 Compiled with INTERCONNECT - Version: 9.14.3941
+06/06/2025 15:19:17 -----------------------------------------------
+06/06/2025 15:19:17 Building QA scripts...
+06/06/2025 15:19:17 [01/66] apd_c
+06/06/2025 15:19:17            Building INTERCONNECT QA tests... SUCCESS!
+
+06/06/2025 15:19:17 [02/66] apd_stat_c
+06/06/2025 15:19:17            Building INTERCONNECT QA tests... SUCCESS!
+
+06/06/2025 15:19:17 [03/66] custom_veriloga_eps
+06/06/2025 15:19:17            Skipped building QA tests.
+06/06/2025 15:19:17 [04/66] dc_strip_te_c
+06/06/2025 15:19:17            Building INTERCONNECT QA tests... SUCCESS!
+
+06/06/2025 15:19:17 [05/66] eam_te_c
+06/06/2025 15:19:17            Building INTERCONNECT QA tests... SUCCESS!
+
+06/06/2025 15:19:17 [06/66] fiber_array_8x8_stat_c
+06/06/2025 15:19:17            Building INTERCONNECT QA tests... SUCCESS!
+
+06/06/2025 15:19:18 [07/66] gc_fitted_stat_te_c
+06/06/2025 15:19:18            Building INTERCONNECT QA tests... SUCCESS!
+
+06/06/2025 15:19:18 [08/66] gc_fitted_te_c
+06/06/2025 15:19:18            Building INTERCONNECT QA tests... SUCCESS!
+
+06/06/2025 15:19:18 [09/66] gc_raw_spar_stat_te_c
+06/06/2025 15:19:18            Building INTERCONNECT QA tests... SUCCESS!
+
+06/06/2025 15:19:18 [10/66] gc_strip_te_c
+06/06/2025 15:19:18            Building INTERCONNECT QA tests... SUCCESS!
+
+06/06/2025 15:19:18 [11/66] mmi_1x2_stat_strip_te_c
+06/06/2025 15:19:18            Building INTERCONNECT QA tests... SUCCESS!
+
+06/06/2025 15:19:18 [12/66] mmi_1x2_strip_te_c
+06/06/2025 15:19:18            Building INTERCONNECT QA tests... SUCCESS!
+
+06/06/2025 15:19:18 [13/66] mmi_1x2_strip_te_c_thermal
+06/06/2025 15:19:18            Building INTERCONNECT QA tests... SUCCESS!
+
+06/06/2025 15:19:18 [14/66] mzi_thermal_2x2_te_c
+06/06/2025 15:19:18            Building INTERCONNECT QA tests... SUCCESS!
+
+06/06/2025 15:19:18 [15/66] mzi_thermal_unbalanced_te_c
+06/06/2025 15:19:18            Building INTERCONNECT QA tests... SUCCESS!
+
+06/06/2025 15:19:18 [16/66] mzm_2x2_stat_fom_te_c
+06/06/2025 15:19:18            Building INTERCONNECT QA tests... SUCCESS!
+
+06/06/2025 15:19:18 [17/66] mzm_2x2_te_c
+06/06/2025 15:19:18            Building INTERCONNECT QA tests... SUCCESS!
+
+06/06/2025 15:19:18 [18/66] mzm_balanced_te_c
+06/06/2025 15:19:18            Building INTERCONNECT QA tests... SUCCESS!
+
+06/06/2025 15:19:18 [19/66] mzm_stat_fom_unbalanced_te_c
+06/06/2025 15:19:18            Building INTERCONNECT QA tests... SUCCESS!
+
+06/06/2025 15:19:18 [20/66] mzm_stat_unbalanced_te_c
+06/06/2025 15:19:18            Building INTERCONNECT QA tests... SUCCESS!
+
+06/06/2025 15:19:18 [21/66] mzm_unbalanced_te_c
+06/06/2025 15:19:18            Building INTERCONNECT QA tests... SUCCESS!
+
+06/06/2025 15:19:18 [22/66] mzm_unbalanced_tw_te_c
+06/06/2025 15:19:18            Building INTERCONNECT QA tests... SUCCESS!
+
+06/06/2025 15:19:18 [23/66] pd_c
+06/06/2025 15:19:18            Building INTERCONNECT QA tests... SUCCESS!
+
+06/06/2025 15:19:18 [24/66] pd_harmonic
+06/06/2025 15:19:18            Building INTERCONNECT QA tests... SUCCESS!
+
+06/06/2025 15:19:18 [25/66] pd_pcell_c
+06/06/2025 15:19:18            Building INTERCONNECT QA tests... SUCCESS!
+
+06/06/2025 15:19:18 [26/66] pd_pcell_stat_c
+06/06/2025 15:19:18            Building INTERCONNECT QA tests... SUCCESS!
+
+06/06/2025 15:19:18 [27/66] pd_stat_c
+06/06/2025 15:19:18            Building INTERCONNECT QA tests... SUCCESS!
+
+06/06/2025 15:19:18 [28/66] pdc_strip_c
+06/06/2025 15:19:18            Building INTERCONNECT QA tests... SUCCESS!
+
+06/06/2025 15:19:18 [29/66] ps_pin_te_c
+06/06/2025 15:19:18            Building INTERCONNECT QA tests... SUCCESS!
+
+06/06/2025 15:19:18 [30/66] ps_pn_stat_te_c
+06/06/2025 15:19:18            Building INTERCONNECT QA tests... SUCCESS!
+
+06/06/2025 15:19:18 [31/66] ps_pn_te_c
+06/06/2025 15:19:18            Building INTERCONNECT QA tests... SUCCESS!
+
+06/06/2025 15:19:18 [32/66] ps_pn_tw_te_c
+06/06/2025 15:19:18            Building INTERCONNECT QA tests... SUCCESS!
+
+06/06/2025 15:19:18 [33/66] ps_thermal_stat_te_c
+06/06/2025 15:19:18            Building INTERCONNECT QA tests... SUCCESS!
+
+06/06/2025 15:19:18 [34/66] ps_thermal_te_c
+06/06/2025 15:19:18            Building INTERCONNECT QA tests... SUCCESS!
+
+06/06/2025 15:19:18 [35/66] ptaper_pr_c
+06/06/2025 15:19:18            Building INTERCONNECT QA tests... SUCCESS!
+
+06/06/2025 15:19:18 [36/66] ptaper_strip_c
+06/06/2025 15:19:18            Building INTERCONNECT QA tests... SUCCESS!
+
+06/06/2025 15:19:18 [37/66] rm_db_pcell_strip_te_c
+06/06/2025 15:19:18            Building INTERCONNECT QA tests... SUCCESS!
+
+06/06/2025 15:19:19 [38/66] rm_db_stat_fom_strip_te_c
+06/06/2025 15:19:19            Building INTERCONNECT QA tests... SUCCESS!
+
+06/06/2025 15:19:19 [39/66] rm_db_strip_te_c
+06/06/2025 15:19:19            Building INTERCONNECT QA tests... SUCCESS!
+
+06/06/2025 15:19:19 [40/66] rm_stat_fom_strip_te_c
+06/06/2025 15:19:19            Building INTERCONNECT QA tests... SUCCESS!
+
+06/06/2025 15:19:19 [41/66] rm_stat_strip_te_c
+06/06/2025 15:19:19            Building INTERCONNECT QA tests... SUCCESS!
+
+06/06/2025 15:19:19 [42/66] rm_strip_te_c
+06/06/2025 15:19:19            Building INTERCONNECT QA tests... SUCCESS!
+
+06/06/2025 15:19:19 [43/66] rr_stat_strip_te_c
+06/06/2025 15:19:19            Building INTERCONNECT QA tests... SUCCESS!
+
+06/06/2025 15:19:19 [44/66] rr_strip_te_c
+06/06/2025 15:19:19            Building INTERCONNECT QA tests... SUCCESS!
+
+06/06/2025 15:19:19 [45/66] rs_strip_te_c
+06/06/2025 15:19:19            Building INTERCONNECT QA tests... SUCCESS!
+
+06/06/2025 15:19:19 [46/66] scripted_grating_stat
+06/06/2025 15:19:19            Building INTERCONNECT QA tests... SUCCESS!
+
+06/06/2025 15:19:19 [47/66] scripted_wg
+06/06/2025 15:19:19            Building INTERCONNECT QA tests... SUCCESS!
+
+06/06/2025 15:19:19 [48/66] thermal_switch_2x2_stat_te_c
+06/06/2025 15:19:19            Building INTERCONNECT QA tests... SUCCESS!
+
+06/06/2025 15:19:19 [49/66] thermal_switch_2x2_te_c
+06/06/2025 15:19:19            Building INTERCONNECT QA tests... SUCCESS!
+
+06/06/2025 15:19:19 [50/66] thermal_switch_stat_te_c
+06/06/2025 15:19:19            Building INTERCONNECT QA tests... SUCCESS!
+
+06/06/2025 15:19:19 [51/66] thermal_switch_te_c
+06/06/2025 15:19:19            Building INTERCONNECT QA tests... SUCCESS!
+
+06/06/2025 15:19:19 [52/66] voa_stat_te_c
+06/06/2025 15:19:19            Building INTERCONNECT QA tests... SUCCESS!
+
+06/06/2025 15:19:19 [53/66] wg_back_annotation
+06/06/2025 15:19:19            Building INTERCONNECT QA tests... SUCCESS!
+
+06/06/2025 15:19:19 [54/66] wg_backscatter
+06/06/2025 15:19:19            Building INTERCONNECT QA tests... SUCCESS!
+
+06/06/2025 15:19:19 [55/66] wg_bend_90
+06/06/2025 15:19:19            Building INTERCONNECT QA tests... SUCCESS!
+
+06/06/2025 15:19:19 [56/66] wg_connector
+06/06/2025 15:19:19            Building INTERCONNECT QA tests... SUCCESS!
+
+06/06/2025 15:19:19 [57/66] wg_stat_strip_straight_c
+06/06/2025 15:19:19            Building INTERCONNECT QA tests... SUCCESS!
+
+06/06/2025 15:19:19 [58/66] wg_stat_strip_straight_parameterized
+06/06/2025 15:19:19            Building INTERCONNECT QA tests... SUCCESS!
+
+06/06/2025 15:19:19 [59/66] wg_strip_arc_parameterized
+06/06/2025 15:19:19            Building INTERCONNECT QA tests... SUCCESS!
+
+06/06/2025 15:19:19 [60/66] wg_strip_sbend_parameterized
+06/06/2025 15:19:19            Building INTERCONNECT QA tests... SUCCESS!
+
+06/06/2025 15:19:19 [61/66] wg_strip_straight_c
+06/06/2025 15:19:19            Building INTERCONNECT QA tests... SUCCESS!
+
+06/06/2025 15:19:19 [62/66] wg_strip_straight_parameterized
+06/06/2025 15:19:19            Building INTERCONNECT QA tests... SUCCESS!
+
+06/06/2025 15:19:19 [63/66] container_element_child1
+06/06/2025 15:19:19            Building INTERCONNECT QA tests... SUCCESS!
+
+06/06/2025 15:19:19 [64/66] container_element_child2
+06/06/2025 15:19:19            Building INTERCONNECT QA tests... SUCCESS!
+
+06/06/2025 15:19:19 [65/66] container_example
+06/06/2025 15:19:19            Removed INTERCONNECT tests for container_element_child1
+06/06/2025 15:19:19            Building QA tests for container container_example, container_element_child1...SUCCESS!
+
+06/06/2025 15:19:19            Removed INTERCONNECT tests for container_element_child2
+06/06/2025 15:19:19            Building QA tests for container container_example, container_element_child2...SUCCESS!
+
+06/06/2025 15:19:19 [66/66] compound_rm_stat
+06/06/2025 15:19:19 There are 66 elements in the list
+06/06/2025 15:19:19 64 top level elements were found
+06/06/2025 15:19:19 1 container elements were found
+06/06/2025 15:19:19 2 children were found
+06/06/2025 15:19:19 2 original subelement tests were removed
+06/06/2025 15:19:19 Total number of INTERCONNECT tests is 64
+06/06/2025 15:19:20 
+06/06/2025 15:19:20 CML Compiler executed with specification defined in Foundry_X.json
+#########################################################END OF LOG SESSION###############################################################
+
+########################################################START OF LOG SESSION##############################################################
+
+CURRENT DATE AND TIME: 06/06/2025 15:20:03
+
+CML Compiler executable path: C:\Program Files\Lumerical\v242\CML_Compiler\bin\\cml-compiler.pyc
+Executed command: cml-compiler runtests -t Foundry_X.json 
+06/06/2025 15:20:03 Running automated QAs...
+06/06/2025 15:20:03 -----------------------------------------------
+06/06/2025 15:20:03 Lumerical CML Compiler - Version: 3.9.3941
+06/06/2025 15:20:03 Compiled with INTERCONNECT - Version: 9.14.3941
+06/06/2025 15:20:03 -----------------------------------------------
+=============================
+Running INTERCONNECT QA tests
+=============================
+[01/65]apd_c:
+Running apd_c_INTC_test...
+	photodetector_avalanche_Idark_Iphoto_qa: PASS
+	photodetector_avalanche_Idark_Iphoto_qa: PASS
+	photodetector_avalanche_Idark_Iphoto_qa: PASS
+	photodetector_avalanche_Idark_Iphoto_qa: PASS
+	photodetector_avalanche_Idark_Iphoto_qa: PASS
+	photodetector_avalanche_Idark_Iphoto_qa: PASS
+	photodetector_avalanche_Idark_Iphoto_qa: PASS
+	photodetector_avalanche_Idark_Iphoto_qa: PASS
+	photodetector_avalanche_Idark_Iphoto_qa: PASS
+	photodetector_avalanche_Idark_Iphoto_qa: PASS
+	photodetector_avalanche_Idark_Iphoto_qa: PASS
+	photodetector_avalanche_Idark_Iphoto_qa: PASS
+	photodetector_avalanche_Idark_Iphoto_qa: PASS
+	photodetector_avalanche_Idark_Iphoto_qa: PASS
+	photodetector_avalanche_Idark_Iphoto_qa: PASS
+	photodetector_avalanche_Idark_Iphoto_qa: PASS
+	photodetector_avalanche_Idark_Iphoto_qa: PASS
+	photodetector_avalanche_Idark_Iphoto_qa: PASS
+	photodetector_avalanche_BW_qa: PASS
+	photodetector_avalanche_BW_qa: PASS
+	photodetector_avalanche_BW_qa: PASS
+[02/65]apd_stat_c:
+Running apd_stat_c_INTC_test...
+	photodetector_avalanche_Idark_Iphoto_qa: PASS
+	photodetector_avalanche_Idark_Iphoto_qa: PASS
+	photodetector_avalanche_Idark_Iphoto_qa: PASS
+	photodetector_avalanche_Idark_Iphoto_qa: PASS
+	photodetector_avalanche_Idark_Iphoto_qa: PASS
+	photodetector_avalanche_Idark_Iphoto_qa: PASS
+	photodetector_avalanche_Idark_Iphoto_qa: PASS
+	photodetector_avalanche_Idark_Iphoto_qa: PASS
+	photodetector_avalanche_Idark_Iphoto_qa: PASS
+	photodetector_avalanche_Idark_Iphoto_qa: PASS
+	photodetector_avalanche_Idark_Iphoto_qa: PASS
+	photodetector_avalanche_Idark_Iphoto_qa: PASS
+	photodetector_avalanche_Idark_Iphoto_qa: PASS
+	photodetector_avalanche_Idark_Iphoto_qa: PASS
+	photodetector_avalanche_Idark_Iphoto_qa: PASS
+	photodetector_avalanche_Idark_Iphoto_qa: PASS
+	photodetector_avalanche_Idark_Iphoto_qa: PASS
+	photodetector_avalanche_Idark_Iphoto_qa: PASS
+	photodetector_avalanche_BW_qa: PASS
+	photodetector_avalanche_BW_qa: PASS
+	photodetector_avalanche_BW_qa: PASS
+	photodetector_avalanche_statistical_qa: PASS
+	photodetector_avalanche_statistical_qa: PASS
+	photodetector_avalanche_statistical_qa: PASS
+[03/65] compound_rm_stat: NO TEST EXISTS
+	Run 'cml-compiler all' or 'cml-compiler test' to generate test files.
+[04/65]container_element_child1:
+Running container_element_child1_container_INTC_test...
+	spar_fixed_passivity_reciprocity_qa: PASS
+	spar_fixed_passivity_reciprocity_qa: PASS
+	spar_fixed_passivity_reciprocity_qa: PASS
+	spar_fixed_source_qa: PASS
+	spar_fixed_source_qa: PASS
+	spar_fixed_regression_qa: PASS
+	spar_fixed_regression_qa: PASS
+	spar_fixed_regression_qa: PASS
+	spar_fixed_time_domain_qa: PASS
+	spar_fixed_time_domain_qa: PASS
+[05/65]container_element_child2:
+Running container_element_child2_container_INTC_test...
+	spar_fixed_passivity_reciprocity_qa: PASS
+	spar_fixed_passivity_reciprocity_qa: PASS
+	spar_fixed_passivity_reciprocity_qa: PASS
+	spar_fixed_source_qa: PASS
+	spar_fixed_source_qa: PASS
+	spar_fixed_regression_qa: PASS
+	spar_fixed_regression_qa: PASS
+	spar_fixed_regression_qa: PASS
+	spar_fixed_time_domain_qa: PASS
+	spar_fixed_time_domain_qa: PASS
+[06/65]custom_veriloga_eps:
+Skipped: 'lum_custom_veriloga_eps' does not exist in 'Foundry_X' library installed in INTERCONNECT. Please install the latest library if available!
+[07/65]dc_strip_te_c:
+Running dc_strip_te_c_INTC_test...
+	spar_fixed_passivity_reciprocity_qa: PASS
+	spar_fixed_passivity_reciprocity_qa: PASS
+	spar_fixed_passivity_reciprocity_qa: PASS
+	spar_fixed_source_qa: PASS
+	spar_fixed_source_qa: PASS
+	spar_fixed_regression_qa: PASS
+	spar_fixed_regression_qa: PASS
+	spar_fixed_regression_qa: PASS
+	spar_fixed_time_domain_qa: PASS
+	spar_fixed_time_domain_qa: PASS
+[08/65]eam_te_c:
+Running eam_te_c_INTC_test...
+	electro_absorption_modulator_IL_ER_qa: PASS
+	electro_absorption_modulator_IL_ER_qa: PASS
+	electro_absorption_modulator_BW_qa: PASS
+[09/65]fiber_array_8x8_stat_c:
+Running fiber_array_8x8_stat_c_INTC_test...
+	fiber_array_compare_loss_data: PASS
+	fiber_array_compare_loss_data: PASS
+	fiber_array_compare_loss_data: PASS
+	fiber_array_compare_loss_data: PASS
+	fiber_array_compare_loss_data: PASS
+	fiber_array_compare_loss_data: PASS
+	fiber_array_statistical_qa: PASS
+[10/65]gc_fitted_stat_te_c:
+Running gc_fitted_stat_te_c_INTC_test...
+	grating_coupler_peak_wl_BW_skew_qa: PASS
+	grating_coupler_peak_wl_BW_skew_qa: PASS
+	grating_coupler_peak_wl_BW_skew_qa: PASS
+	grating_coupler_dpeakwl_dT_qa: PASS
+	grating_coupler_IL_R_qa: PASS
+	grating_coupler_IL_R_qa: PASS
+	grating_coupler_IL_R_qa: PASS
+	grating_coupler_IL_R_qa: PASS
+	grating_coupler_IL_R_qa: PASS
+	grating_coupler_IL_R_qa: PASS
+	grating_coupler_IL_R_qa: PASS
+	grating_coupler_IL_R_qa: PASS
+	grating_coupler_IL_R_qa: PASS
+	grating_coupler_IL_R_qa: PASS
+	grating_coupler_IL_R_qa: PASS
+	grating_coupler_IL_R_qa: PASS
+	grating_coupler_statistical_qa: PASS
+	grating_coupler_statistical_qa: PASS
+	grating_coupler_statistical_qa: PASS
+	grating_coupler_statistical_qa: PASS
+[11/65]gc_fitted_te_c:
+Running gc_fitted_te_c_INTC_test...
+	grating_coupler_peak_wl_BW_skew_qa: PASS
+	grating_coupler_peak_wl_BW_skew_qa: PASS
+	grating_coupler_peak_wl_BW_skew_qa: PASS
+	grating_coupler_dpeakwl_dT_qa: PASS
+	grating_coupler_IL_R_qa: PASS
+	grating_coupler_IL_R_qa: PASS
+	grating_coupler_IL_R_qa: PASS
+	grating_coupler_IL_R_qa: PASS
+	grating_coupler_IL_R_qa: PASS
+	grating_coupler_IL_R_qa: PASS
+	grating_coupler_IL_R_qa: PASS
+	grating_coupler_IL_R_qa: PASS
+	grating_coupler_IL_R_qa: PASS
+	grating_coupler_IL_R_qa: PASS
+	grating_coupler_IL_R_qa: PASS
+	grating_coupler_IL_R_qa: PASS
+[12/65]gc_raw_spar_stat_te_c:
+Running gc_raw_spar_stat_te_c_INTC_test...
+	sparsweep_pcell_passivity_reciprocity_time_domain_qa: PASS
+	sparsweep_pcell_passivity_reciprocity_time_domain_qa: PASS
+	sparsweep_pcell_passivity_reciprocity_time_domain_qa: PASS
+	sparsweep_pcell_passivity_reciprocity_time_domain_qa: PASS
+	sparsweep_pcell_regression_qa: PASS
+	sparsweep_pcell_regression_qa: PASS
+	sparsweep_pcell_regression_qa: PASS
+	sparsweep_pcell_statistical_qa: PASS
+[13/65]gc_strip_te_c:
+Running gc_strip_te_c_INTC_test...
+	spar_fixed_passivity_reciprocity_qa: PASS
+	spar_fixed_passivity_reciprocity_qa: PASS
+	spar_fixed_passivity_reciprocity_qa: PASS
+	spar_fixed_source_qa: PASS
+	spar_fixed_regression_qa: PASS
+	spar_fixed_regression_qa: PASS
+	spar_fixed_regression_qa: PASS
+	spar_fixed_time_domain_qa: PASS
+	spar_fixed_time_domain_qa: PASS
+[14/65]mmi_1x2_stat_strip_te_c:
+Running mmi_1x2_stat_strip_te_c_INTC_test...
+	sparsweep_pcell_passivity_reciprocity_time_domain_qa: PASS
+	sparsweep_pcell_passivity_reciprocity_time_domain_qa: PASS
+	sparsweep_pcell_passivity_reciprocity_time_domain_qa: PASS
+	sparsweep_pcell_passivity_reciprocity_time_domain_qa: PASS
+	sparsweep_pcell_regression_qa: PASS
+	sparsweep_pcell_regression_qa: PASS
+	sparsweep_pcell_regression_qa: PASS
+	sparsweep_pcell_statistical_qa: PASS
+[15/65]mmi_1x2_strip_te_c:
+Running mmi_1x2_strip_te_c_INTC_test...
+	spar_fixed_passivity_reciprocity_qa: PASS
+	spar_fixed_passivity_reciprocity_qa: PASS
+	spar_fixed_passivity_reciprocity_qa: PASS
+	spar_fixed_source_qa: PASS
+	spar_fixed_source_qa: PASS
+	spar_fixed_regression_qa: PASS
+	spar_fixed_regression_qa: PASS
+	spar_fixed_regression_qa: PASS
+	spar_fixed_time_domain_qa: PASS
+	spar_fixed_time_domain_qa: PASS
+[16/65]mmi_1x2_strip_te_c_thermal:
+Running mmi_1x2_strip_te_c_thermal_INTC_test...
+	sparsweep_pcell_passivity_reciprocity_time_domain_qa: PASS
+	sparsweep_pcell_passivity_reciprocity_time_domain_qa: PASS
+	sparsweep_pcell_passivity_reciprocity_time_domain_qa: PASS
+	sparsweep_pcell_passivity_reciprocity_time_domain_qa: PASS
+	sparsweep_pcell_passivity_reciprocity_time_domain_qa: PASS
+	sparsweep_pcell_passivity_reciprocity_time_domain_qa: PASS
+	sparsweep_pcell_passivity_reciprocity_time_domain_qa: PASS
+	sparsweep_pcell_passivity_reciprocity_time_domain_qa: PASS
+	sparsweep_pcell_passivity_reciprocity_time_domain_qa: PASS
+	sparsweep_pcell_passivity_reciprocity_time_domain_qa: PASS
+	sparsweep_pcell_passivity_reciprocity_time_domain_qa: PASS
+	sparsweep_pcell_passivity_reciprocity_time_domain_qa: PASS
+	sparsweep_pcell_passivity_reciprocity_time_domain_qa: PASS
+	sparsweep_pcell_passivity_reciprocity_time_domain_qa: PASS
+	sparsweep_pcell_passivity_reciprocity_time_domain_qa: PASS
+	sparsweep_pcell_passivity_reciprocity_time_domain_qa: PASS
+	sparsweep_pcell_passivity_reciprocity_time_domain_qa: PASS
+	sparsweep_pcell_passivity_reciprocity_time_domain_qa: PASS
+	sparsweep_pcell_passivity_reciprocity_time_domain_qa: PASS
+	sparsweep_pcell_passivity_reciprocity_time_domain_qa: PASS
+	sparsweep_pcell_regression_qa: PASS
+	sparsweep_pcell_regression_qa: PASS
+	sparsweep_pcell_regression_qa: PASS
+	sparsweep_pcell_regression_qa: PASS
+	sparsweep_pcell_regression_qa: PASS
+	sparsweep_pcell_regression_qa: PASS
+	sparsweep_pcell_regression_qa: PASS
+	sparsweep_pcell_regression_qa: PASS
+	sparsweep_pcell_regression_qa: PASS
+	sparsweep_pcell_regression_qa: PASS
+	sparsweep_pcell_regression_qa: PASS
+[17/65]mzi_thermal_2x2_te_c:
+Running mzi_thermal_2x2_te_c_INTC_test...
+	mach_zehnder_modulator_2x2_balanced_S_Vpi_qa: PASS
+	mach_zehnder_modulator_2x2_balanced_S_Vpi_qa: PASS
+	mach_zehnder_modulator_2x2_balanced_Ppi_thermal_qa: PASS
+	mach_zehnder_modulator_2x2_thermal_BW_qa: PASS
+[18/65]mzi_thermal_unbalanced_te_c:
+Running mzi_thermal_unbalanced_te_c_INTC_test...
+	mach_zehnder_modulator_unbalanced_notch_wl_FSR_ER_IL_qa: PASS
+	mach_zehnder_modulator_unbalanced_notch_wl_FSR_ER_IL_qa: PASS
+	mach_zehnder_modulator_unbalanced_notch_wl_FSR_ER_IL_qa: PASS
+	mach_zehnder_modulator_unbalanced_notch_wl_FSR_ER_IL_qa: PASS
+	mach_zehnder_modulator_unbalanced_dneff_dT_qa: PASS
+	mach_zehnder_modulator_unbalanced_Ppi_thermal_qa: PASS
+	mach_zehnder_modulator_thermal_BW_qa: PASS
+[19/65]mzm_2x2_stat_fom_te_c:
+Running mzm_2x2_stat_fom_te_c_INTC_test...
+	mach_zehnder_modulator_2x2_balanced_S_Vpi_qa: PASS
+source.mzm_2x2_stat_fom_te_c.mzm_2x2_stat_fom_te_c_INTC_test: ERROR
+source.mzm_2x2_stat_fom_te_c.mzm_2x2_stat_fom_te_c_INTC_test: ERROR
+source.mzm_2x2_stat_fom_te_c.mzm_2x2_stat_fom_te_c_INTC_test: ERROR
+
+06/06/2025 15:27:14 ERROR: CML Compiler exited prematurely with the following error:
+#########################################################END OF LOG SESSION###############################################################
+
+########################################################START OF LOG SESSION##############################################################
+
+CURRENT DATE AND TIME: 06/06/2025 15:41:11
+
+CML Compiler executable path: C:\Program Files\Lumerical\v242\CML_Compiler\bin\\cml-compiler.pyc
+Executed command: cml-compiler library -t Foundry_X.json -e wg_bend_90 
+06/06/2025 15:41:11 -----------------------------------------------
+06/06/2025 15:41:11 Lumerical CML Compiler - Version: 3.9.3941
+06/06/2025 15:41:11 Compiled with INTERCONNECT - Version: 9.14.3941
+06/06/2025 15:41:11 -----------------------------------------------
+06/06/2025 15:41:11 Building compact models...
+06/06/2025 15:41:16 [01/01] wg_bend_90
+06/06/2025 15:41:16            Validating wg_bend_90.json source data... PASSED!
+
+06/06/2025 15:41:16            Building compact model... SUCCESS!
+
+06/06/2025 15:41:16 "custom_MZM" added as user-created element.
+06/06/2025 15:41:16 Data validation has 0 warnings and 0 errors. See cml-compiler.state for details.
+06/06/2025 15:41:16 
+06/06/2025 15:41:16 CML Compiler executed with specification defined in Foundry_X.json
+06/06/2025 15:41:16 
+06/06/2025 15:41:16 
+06/06/2025 15:41:16 #############################################
+06/06/2025 15:41:16 Finished compiling your Foundry_X library!
+06/06/2025 15:41:16 CML Compiler outputs are located at C:\Users\luciv\Documents\Lucivaldo\CML\Idea\user_created\Foundry_X\artifacts.
+06/06/2025 15:41:16 
+06/06/2025 15:41:16 	* INTERCONNECT CML files: C:\Users\luciv\Documents\Lucivaldo\CML\Idea\user_created\Foundry_X\artifacts\interconnect
+#########################################################END OF LOG SESSION###############################################################
+
+########################################################START OF LOG SESSION##############################################################
+
+CURRENT DATE AND TIME: 06/06/2025 15:41:18
+
+CML Compiler executable path: C:\Program Files\Lumerical\v242\CML_Compiler\bin\\cml-compiler.pyc
+Executed command: cml-compiler install -t Foundry_X.json 
+06/06/2025 15:41:22 -----------------------------------------------
+06/06/2025 15:41:22 Lumerical CML Compiler - Version: 3.9.3941
+06/06/2025 15:41:22 Compiled with INTERCONNECT - Version: 9.14.3941
+06/06/2025 15:41:22 -----------------------------------------------
+06/06/2025 15:41:22 Installing library...
+06/06/2025 15:41:22 Installed library! Library (CML) information:
+06/06/2025 15:41:22 {
+06/06/2025 15:41:22   "INTERCONNECT Version": "9.14.3941",
+06/06/2025 15:41:22   "Library Name": "Foundry_X",
+06/06/2025 15:41:22   "Library Version": "4.0"
+06/06/2025 15:41:22 }
+06/06/2025 15:41:22 
+06/06/2025 15:41:22 CML Compiler executed with specification defined in Foundry_X.json
+#########################################################END OF LOG SESSION###############################################################
+
+########################################################START OF LOG SESSION##############################################################
+
+CURRENT DATE AND TIME: 06/06/2025 15:41:23
+
+CML Compiler executable path: C:\Program Files\Lumerical\v242\CML_Compiler\bin\\cml-compiler.pyc
+Executed command: cml-compiler test -t Foundry_X.json -e wg_bend_90 
+06/06/2025 15:41:25 -----------------------------------------------
+06/06/2025 15:41:25 Lumerical CML Compiler - Version: 3.9.3941
+06/06/2025 15:41:25 Compiled with INTERCONNECT - Version: 9.14.3941
+06/06/2025 15:41:25 -----------------------------------------------
+06/06/2025 15:41:25 Building QA scripts...
+06/06/2025 15:41:25 [01/01] wg_bend_90
+06/06/2025 15:41:25            Building INTERCONNECT QA tests... SUCCESS!
+
+06/06/2025 15:41:25 There are 1 elements in the list
+06/06/2025 15:41:25 1 top level elements were found
+06/06/2025 15:41:25 0 container elements were found
+06/06/2025 15:41:25 0 children were found
+06/06/2025 15:41:25 0 original subelement tests were removed
+06/06/2025 15:41:25 Total number of INTERCONNECT tests is 1
+06/06/2025 15:41:26 
+06/06/2025 15:41:26 CML Compiler executed with specification defined in Foundry_X.json
+#########################################################END OF LOG SESSION###############################################################
+
+########################################################START OF LOG SESSION##############################################################
+
+CURRENT DATE AND TIME: 06/06/2025 15:46:46
+
+CML Compiler executable path: C:\Program Files\Lumerical\v242\CML_Compiler\bin\\cml-compiler.pyc
+Executed command: cml-compiler test -t Foundry_X.json -e gc_raw_spar_stat_te_c 
+06/06/2025 15:46:49 -----------------------------------------------
+06/06/2025 15:46:49 Lumerical CML Compiler - Version: 3.9.3941
+06/06/2025 15:46:49 Compiled with INTERCONNECT - Version: 9.14.3941
+06/06/2025 15:46:49 -----------------------------------------------
+06/06/2025 15:46:49 Building QA scripts...
+06/06/2025 15:46:50 ERROR: CML Compiler exited prematurely with the following error:
+06/06/2025 15:46:50 IndexError('list index out of range')
+#########################################################END OF LOG SESSION###############################################################
+
+########################################################START OF LOG SESSION##############################################################
+
+CURRENT DATE AND TIME: 06/06/2025 20:19:14
+
+CML Compiler executable path: C:\Program Files\Lumerical\v242\CML_Compiler\bin\\cml-compiler.pyc
+Executed command: cml-compiler library -t Foundry_X.json 
+06/06/2025 20:19:14 -----------------------------------------------
+06/06/2025 20:19:14 Lumerical CML Compiler - Version: 3.9.3941
+06/06/2025 20:19:14 Compiled with INTERCONNECT - Version: 9.14.3941
+06/06/2025 20:19:14 -----------------------------------------------
+06/06/2025 20:19:14 Building compact models...
+06/06/2025 20:19:20 [01/66] apd_c
+06/06/2025 20:19:20            Validating apd_c.json source data... FAILED!
+
+06/06/2025 20:19:20 C:\Users\luciv\Documents\Lucivaldo\CML\Idea\user_created\Foundry_X\source\apd_c\apd_c.json path does not exist. Please make sure the element source folder and files exist
+06/06/2025 20:19:20 [01/66] apd_stat_c
+06/06/2025 20:19:20            Validating apd_stat_c.json source data... FAILED!
+
+06/06/2025 20:19:20 C:\Users\luciv\Documents\Lucivaldo\CML\Idea\user_created\Foundry_X\source\apd_stat_c\apd_stat_c.json path does not exist. Please make sure the element source folder and files exist
+06/06/2025 20:19:21 [01/66] compound_rm_stat
+06/06/2025 20:19:21            Validating compound_rm_stat.json source data... FAILED!
+
+06/06/2025 20:19:21 C:\Users\luciv\Documents\Lucivaldo\CML\Idea\user_created\Foundry_X\source\compound_rm_stat\compound_rm_stat.json path does not exist. Please make sure the element source folder and files exist
+06/06/2025 20:19:21 [01/66] custom_veriloga_eps
+06/06/2025 20:19:21            Validating custom_veriloga_eps.json source data... FAILED!
+
+06/06/2025 20:19:21 C:\Users\luciv\Documents\Lucivaldo\CML\Idea\user_created\Foundry_X\source\custom_veriloga_eps\custom_veriloga_eps.json path does not exist. Please make sure the element source folder and files exist
+06/06/2025 20:19:21 [01/66] dc_strip_te_c
+06/06/2025 20:19:21            Validating dc_strip_te_c.json source data... FAILED!
+
+06/06/2025 20:19:21 C:\Users\luciv\Documents\Lucivaldo\CML\Idea\user_created\Foundry_X\source\dc_strip_te_c\dc_strip_te_c.json path does not exist. Please make sure the element source folder and files exist
+06/06/2025 20:19:21 [01/66] eam_te_c
+06/06/2025 20:19:21            Validating eam_te_c.json source data... FAILED!
+
+06/06/2025 20:19:21 C:\Users\luciv\Documents\Lucivaldo\CML\Idea\user_created\Foundry_X\source\eam_te_c\eam_te_c.json path does not exist. Please make sure the element source folder and files exist
+06/06/2025 20:19:21 [01/66] fiber_array_8x8_stat_c
+06/06/2025 20:19:21            Validating fiber_array_8x8_stat_c.json source data... FAILED!
+
+06/06/2025 20:19:21 C:\Users\luciv\Documents\Lucivaldo\CML\Idea\user_created\Foundry_X\source\fiber_array_8x8_stat_c\fiber_array_8x8_stat_c.json path does not exist. Please make sure the element source folder and files exist
+06/06/2025 20:19:21 [01/66] gc_fitted_stat_te_c
+06/06/2025 20:19:21            Validating gc_fitted_stat_te_c.json source data... FAILED!
+
+06/06/2025 20:19:21 C:\Users\luciv\Documents\Lucivaldo\CML\Idea\user_created\Foundry_X\source\gc_fitted_stat_te_c\gc_fitted_stat_te_c.json path does not exist. Please make sure the element source folder and files exist
+06/06/2025 20:19:21 [01/66] gc_fitted_te_c
+06/06/2025 20:19:21            Validating gc_fitted_te_c.json source data... FAILED!
+
+06/06/2025 20:19:21 C:\Users\luciv\Documents\Lucivaldo\CML\Idea\user_created\Foundry_X\source\gc_fitted_te_c\gc_fitted_te_c.json path does not exist. Please make sure the element source folder and files exist
+06/06/2025 20:19:21 [01/66] gc_raw_spar_stat_te_c
+06/06/2025 20:19:21            Validating gc_raw_spar_stat_te_c.json source data... FAILED!
+
+06/06/2025 20:19:21 C:\Users\luciv\Documents\Lucivaldo\CML\Idea\user_created\Foundry_X\source\gc_raw_spar_stat_te_c\gc_raw_spar_stat_te_c.json path does not exist. Please make sure the element source folder and files exist
+06/06/2025 20:19:21 [01/66] gc_strip_te_c
+06/06/2025 20:19:21            Validating gc_strip_te_c.json source data... FAILED!
+
+06/06/2025 20:19:21 C:\Users\luciv\Documents\Lucivaldo\CML\Idea\user_created\Foundry_X\source\gc_strip_te_c\gc_strip_te_c.json path does not exist. Please make sure the element source folder and files exist
+06/06/2025 20:19:21 [01/66] mmi_1x2_stat_strip_te_c
+06/06/2025 20:19:21            Validating mmi_1x2_stat_strip_te_c.json source data... FAILED!
+
+06/06/2025 20:19:21 C:\Users\luciv\Documents\Lucivaldo\CML\Idea\user_created\Foundry_X\source\mmi_1x2_stat_strip_te_c\mmi_1x2_stat_strip_te_c.json path does not exist. Please make sure the element source folder and files exist
+06/06/2025 20:19:21 [01/66] mmi_1x2_strip_te_c
+06/06/2025 20:19:21            Validating mmi_1x2_strip_te_c.json source data... FAILED!
+
+06/06/2025 20:19:21 C:\Users\luciv\Documents\Lucivaldo\CML\Idea\user_created\Foundry_X\source\mmi_1x2_strip_te_c\mmi_1x2_strip_te_c.json path does not exist. Please make sure the element source folder and files exist
+06/06/2025 20:19:21 [01/66] mmi_1x2_strip_te_c_thermal
+06/06/2025 20:19:21            Validating mmi_1x2_strip_te_c_thermal.json source data... FAILED!
+
+06/06/2025 20:19:21 C:\Users\luciv\Documents\Lucivaldo\CML\Idea\user_created\Foundry_X\source\mmi_1x2_strip_te_c_thermal\mmi_1x2_strip_te_c_thermal.json path does not exist. Please make sure the element source folder and files exist
+06/06/2025 20:19:21 [01/66] mzi_thermal_2x2_te_c
+06/06/2025 20:19:21            Validating mzi_thermal_2x2_te_c.json source data... FAILED!
+
+06/06/2025 20:19:21 C:\Users\luciv\Documents\Lucivaldo\CML\Idea\user_created\Foundry_X\source\mzi_thermal_2x2_te_c\mzi_thermal_2x2_te_c.json path does not exist. Please make sure the element source folder and files exist
+06/06/2025 20:19:21 [01/66] mzi_thermal_unbalanced_te_c
+06/06/2025 20:19:21            Validating mzi_thermal_unbalanced_te_c.json source data... FAILED!
+
+06/06/2025 20:19:21 C:\Users\luciv\Documents\Lucivaldo\CML\Idea\user_created\Foundry_X\source\mzi_thermal_unbalanced_te_c\mzi_thermal_unbalanced_te_c.json path does not exist. Please make sure the element source folder and files exist
+06/06/2025 20:19:21 [01/66] mzm_2x2_stat_fom_te_c
+06/06/2025 20:19:21            Validating mzm_2x2_stat_fom_te_c.json source data... FAILED!
+
+06/06/2025 20:19:21 C:\Users\luciv\Documents\Lucivaldo\CML\Idea\user_created\Foundry_X\source\mzm_2x2_stat_fom_te_c\mzm_2x2_stat_fom_te_c.json path does not exist. Please make sure the element source folder and files exist
+06/06/2025 20:19:21 [01/66] mzm_2x2_te_c
+06/06/2025 20:19:21            Validating mzm_2x2_te_c.json source data... FAILED!
+
+06/06/2025 20:19:21 C:\Users\luciv\Documents\Lucivaldo\CML\Idea\user_created\Foundry_X\source\mzm_2x2_te_c\mzm_2x2_te_c.json path does not exist. Please make sure the element source folder and files exist
+06/06/2025 20:19:21 [01/66] mzm_balanced_te_c
+06/06/2025 20:19:21            Validating mzm_balanced_te_c.json source data... FAILED!
+
+06/06/2025 20:19:21 C:\Users\luciv\Documents\Lucivaldo\CML\Idea\user_created\Foundry_X\source\mzm_balanced_te_c\mzm_balanced_te_c.json path does not exist. Please make sure the element source folder and files exist
+06/06/2025 20:19:21 [01/66] mzm_stat_fom_unbalanced_te_c
+06/06/2025 20:19:21            Validating mzm_stat_fom_unbalanced_te_c.json source data... FAILED!
+
+06/06/2025 20:19:21 C:\Users\luciv\Documents\Lucivaldo\CML\Idea\user_created\Foundry_X\source\mzm_stat_fom_unbalanced_te_c\mzm_stat_fom_unbalanced_te_c.json path does not exist. Please make sure the element source folder and files exist
+06/06/2025 20:19:21 [01/66] mzm_stat_unbalanced_te_c
+06/06/2025 20:19:21            Validating mzm_stat_unbalanced_te_c.json source data... FAILED!
+
+06/06/2025 20:19:21 C:\Users\luciv\Documents\Lucivaldo\CML\Idea\user_created\Foundry_X\source\mzm_stat_unbalanced_te_c\mzm_stat_unbalanced_te_c.json path does not exist. Please make sure the element source folder and files exist
+06/06/2025 20:19:21 [01/66] mzm_unbalanced_te_c
+06/06/2025 20:19:21            Validating mzm_unbalanced_te_c.json source data... FAILED!
+
+06/06/2025 20:19:21 C:\Users\luciv\Documents\Lucivaldo\CML\Idea\user_created\Foundry_X\source\mzm_unbalanced_te_c\mzm_unbalanced_te_c.json path does not exist. Please make sure the element source folder and files exist
+06/06/2025 20:19:21 [01/66] mzm_unbalanced_tw_te_c
+06/06/2025 20:19:21            Validating mzm_unbalanced_tw_te_c.json source data... FAILED!
+
+06/06/2025 20:19:21 C:\Users\luciv\Documents\Lucivaldo\CML\Idea\user_created\Foundry_X\source\mzm_unbalanced_tw_te_c\mzm_unbalanced_tw_te_c.json path does not exist. Please make sure the element source folder and files exist
+06/06/2025 20:19:21 [01/66] pd_c
+06/06/2025 20:19:21            Validating pd_c.json source data... FAILED!
+
+06/06/2025 20:19:21 C:\Users\luciv\Documents\Lucivaldo\CML\Idea\user_created\Foundry_X\source\pd_c\pd_c.json path does not exist. Please make sure the element source folder and files exist
+06/06/2025 20:19:21 [01/66] pd_harmonic
+06/06/2025 20:19:21            Validating pd_harmonic.json source data... FAILED!
+
+06/06/2025 20:19:21 C:\Users\luciv\Documents\Lucivaldo\CML\Idea\user_created\Foundry_X\source\pd_harmonic\pd_harmonic.json path does not exist. Please make sure the element source folder and files exist
+06/06/2025 20:19:21 [01/66] pd_pcell_c
+06/06/2025 20:19:21            Validating pd_pcell_c.json source data... FAILED!
+
+06/06/2025 20:19:21 C:\Users\luciv\Documents\Lucivaldo\CML\Idea\user_created\Foundry_X\source\pd_pcell_c\pd_pcell_c.json path does not exist. Please make sure the element source folder and files exist
+06/06/2025 20:19:21 [01/66] pd_pcell_stat_c
+06/06/2025 20:19:21            Validating pd_pcell_stat_c.json source data... FAILED!
+
+06/06/2025 20:19:21 C:\Users\luciv\Documents\Lucivaldo\CML\Idea\user_created\Foundry_X\source\pd_pcell_stat_c\pd_pcell_stat_c.json path does not exist. Please make sure the element source folder and files exist
+06/06/2025 20:19:21 [01/66] pd_stat_c
+06/06/2025 20:19:21            Validating pd_stat_c.json source data... FAILED!
+
+06/06/2025 20:19:21 C:\Users\luciv\Documents\Lucivaldo\CML\Idea\user_created\Foundry_X\source\pd_stat_c\pd_stat_c.json path does not exist. Please make sure the element source folder and files exist
+06/06/2025 20:19:21 [01/66] pdc_strip_c
+06/06/2025 20:19:21            Validating pdc_strip_c.json source data... FAILED!
+
+06/06/2025 20:19:21 C:\Users\luciv\Documents\Lucivaldo\CML\Idea\user_created\Foundry_X\source\pdc_strip_c\pdc_strip_c.json path does not exist. Please make sure the element source folder and files exist
+06/06/2025 20:19:21 [01/66] ps_pin_te_c
+06/06/2025 20:19:21            Validating ps_pin_te_c.json source data... FAILED!
+
+06/06/2025 20:19:21 C:\Users\luciv\Documents\Lucivaldo\CML\Idea\user_created\Foundry_X\source\ps_pin_te_c\ps_pin_te_c.json path does not exist. Please make sure the element source folder and files exist
+06/06/2025 20:19:21 [01/66] ps_pn_stat_te_c
+06/06/2025 20:19:21            Validating ps_pn_stat_te_c.json source data... FAILED!
+
+06/06/2025 20:19:21 C:\Users\luciv\Documents\Lucivaldo\CML\Idea\user_created\Foundry_X\source\ps_pn_stat_te_c\ps_pn_stat_te_c.json path does not exist. Please make sure the element source folder and files exist
+06/06/2025 20:19:21 [01/66] ps_pn_te_c
+06/06/2025 20:19:21            Validating ps_pn_te_c.json source data... FAILED!
+
+06/06/2025 20:19:21 C:\Users\luciv\Documents\Lucivaldo\CML\Idea\user_created\Foundry_X\source\ps_pn_te_c\ps_pn_te_c.json path does not exist. Please make sure the element source folder and files exist
+06/06/2025 20:19:21 [01/66] ps_pn_tw_te_c
+06/06/2025 20:19:21            Validating ps_pn_tw_te_c.json source data... FAILED!
+
+06/06/2025 20:19:21 C:\Users\luciv\Documents\Lucivaldo\CML\Idea\user_created\Foundry_X\source\ps_pn_tw_te_c\ps_pn_tw_te_c.json path does not exist. Please make sure the element source folder and files exist
+06/06/2025 20:19:21 [01/66] ps_thermal_stat_te_c
+06/06/2025 20:19:21            Validating ps_thermal_stat_te_c.json source data... FAILED!
+
+06/06/2025 20:19:21 C:\Users\luciv\Documents\Lucivaldo\CML\Idea\user_created\Foundry_X\source\ps_thermal_stat_te_c\ps_thermal_stat_te_c.json path does not exist. Please make sure the element source folder and files exist
+06/06/2025 20:19:21 [01/66] ps_thermal_te_c
+06/06/2025 20:19:21            Validating ps_thermal_te_c.json source data... FAILED!
+
+06/06/2025 20:19:21 C:\Users\luciv\Documents\Lucivaldo\CML\Idea\user_created\Foundry_X\source\ps_thermal_te_c\ps_thermal_te_c.json path does not exist. Please make sure the element source folder and files exist
+06/06/2025 20:19:21 [01/66] ptaper_pr_c
+06/06/2025 20:19:21            Validating ptaper_pr_c.json source data... FAILED!
+
+06/06/2025 20:19:21 C:\Users\luciv\Documents\Lucivaldo\CML\Idea\user_created\Foundry_X\source\ptaper_pr_c\ptaper_pr_c.json path does not exist. Please make sure the element source folder and files exist
+06/06/2025 20:19:21 [01/66] ptaper_strip_c
+06/06/2025 20:19:21            Validating ptaper_strip_c.json source data... FAILED!
+
+06/06/2025 20:19:21 C:\Users\luciv\Documents\Lucivaldo\CML\Idea\user_created\Foundry_X\source\ptaper_strip_c\ptaper_strip_c.json path does not exist. Please make sure the element source folder and files exist
+06/06/2025 20:19:21 [01/66] rm_db_pcell_strip_te_c
+06/06/2025 20:19:21            Validating rm_db_pcell_strip_te_c.json source data... FAILED!
+
+06/06/2025 20:19:21 C:\Users\luciv\Documents\Lucivaldo\CML\Idea\user_created\Foundry_X\source\rm_db_pcell_strip_te_c\rm_db_pcell_strip_te_c.json path does not exist. Please make sure the element source folder and files exist
+06/06/2025 20:19:21 [01/66] rm_db_stat_fom_strip_te_c
+06/06/2025 20:19:21            Validating rm_db_stat_fom_strip_te_c.json source data... FAILED!
+
+06/06/2025 20:19:21 C:\Users\luciv\Documents\Lucivaldo\CML\Idea\user_created\Foundry_X\source\rm_db_stat_fom_strip_te_c\rm_db_stat_fom_strip_te_c.json path does not exist. Please make sure the element source folder and files exist
+06/06/2025 20:19:21 [01/66] rm_db_strip_te_c
+06/06/2025 20:19:21            Validating rm_db_strip_te_c.json source data... FAILED!
+
+06/06/2025 20:19:21 C:\Users\luciv\Documents\Lucivaldo\CML\Idea\user_created\Foundry_X\source\rm_db_strip_te_c\rm_db_strip_te_c.json path does not exist. Please make sure the element source folder and files exist
+06/06/2025 20:19:21 [01/66] rm_stat_fom_strip_te_c
+06/06/2025 20:19:21            Validating rm_stat_fom_strip_te_c.json source data... FAILED!
+
+06/06/2025 20:19:21 C:\Users\luciv\Documents\Lucivaldo\CML\Idea\user_created\Foundry_X\source\rm_stat_fom_strip_te_c\rm_stat_fom_strip_te_c.json path does not exist. Please make sure the element source folder and files exist
+06/06/2025 20:19:21 [01/66] rm_stat_strip_te_c
+06/06/2025 20:19:21            Validating rm_stat_strip_te_c.json source data... FAILED!
+
+06/06/2025 20:19:21 C:\Users\luciv\Documents\Lucivaldo\CML\Idea\user_created\Foundry_X\source\rm_stat_strip_te_c\rm_stat_strip_te_c.json path does not exist. Please make sure the element source folder and files exist
+06/06/2025 20:19:21 [01/66] rm_strip_te_c
+06/06/2025 20:19:21            Validating rm_strip_te_c.json source data... FAILED!
+
+06/06/2025 20:19:21 C:\Users\luciv\Documents\Lucivaldo\CML\Idea\user_created\Foundry_X\source\rm_strip_te_c\rm_strip_te_c.json path does not exist. Please make sure the element source folder and files exist
+06/06/2025 20:19:21 [01/66] rr_stat_strip_te_c
+06/06/2025 20:19:21            Validating rr_stat_strip_te_c.json source data... FAILED!
+
+06/06/2025 20:19:21 C:\Users\luciv\Documents\Lucivaldo\CML\Idea\user_created\Foundry_X\source\rr_stat_strip_te_c\rr_stat_strip_te_c.json path does not exist. Please make sure the element source folder and files exist
+06/06/2025 20:19:21 [01/66] rr_strip_te_c
+06/06/2025 20:19:21            Validating rr_strip_te_c.json source data... FAILED!
+
+06/06/2025 20:19:21 C:\Users\luciv\Documents\Lucivaldo\CML\Idea\user_created\Foundry_X\source\rr_strip_te_c\rr_strip_te_c.json path does not exist. Please make sure the element source folder and files exist
+06/06/2025 20:19:21 [01/66] rs_strip_te_c
+06/06/2025 20:19:21            Validating rs_strip_te_c.json source data... FAILED!
+
+06/06/2025 20:19:21 C:\Users\luciv\Documents\Lucivaldo\CML\Idea\user_created\Foundry_X\source\rs_strip_te_c\rs_strip_te_c.json path does not exist. Please make sure the element source folder and files exist
+06/06/2025 20:19:21 [01/66] scripted_grating_stat
+06/06/2025 20:19:21            Validating scripted_grating_stat.json source data... FAILED!
+
+06/06/2025 20:19:21 C:\Users\luciv\Documents\Lucivaldo\CML\Idea\user_created\Foundry_X\source\scripted_grating_stat\scripted_grating_stat.json path does not exist. Please make sure the element source folder and files exist
+06/06/2025 20:19:21 [01/66] scripted_wg
+06/06/2025 20:19:21            Validating scripted_wg.json source data... FAILED!
+
+06/06/2025 20:19:21 C:\Users\luciv\Documents\Lucivaldo\CML\Idea\user_created\Foundry_X\source\scripted_wg\scripted_wg.json path does not exist. Please make sure the element source folder and files exist
+06/06/2025 20:19:21 [01/66] thermal_switch_2x2_stat_te_c
+06/06/2025 20:19:21            Validating thermal_switch_2x2_stat_te_c.json source data... FAILED!
+
+06/06/2025 20:19:21 C:\Users\luciv\Documents\Lucivaldo\CML\Idea\user_created\Foundry_X\source\thermal_switch_2x2_stat_te_c\thermal_switch_2x2_stat_te_c.json path does not exist. Please make sure the element source folder and files exist
+06/06/2025 20:19:21 [01/66] thermal_switch_2x2_te_c
+06/06/2025 20:19:21            Validating thermal_switch_2x2_te_c.json source data... FAILED!
+
+06/06/2025 20:19:21 C:\Users\luciv\Documents\Lucivaldo\CML\Idea\user_created\Foundry_X\source\thermal_switch_2x2_te_c\thermal_switch_2x2_te_c.json path does not exist. Please make sure the element source folder and files exist
+06/06/2025 20:19:21 [01/66] thermal_switch_stat_te_c
+06/06/2025 20:19:21            Validating thermal_switch_stat_te_c.json source data... FAILED!
+
+06/06/2025 20:19:21 C:\Users\luciv\Documents\Lucivaldo\CML\Idea\user_created\Foundry_X\source\thermal_switch_stat_te_c\thermal_switch_stat_te_c.json path does not exist. Please make sure the element source folder and files exist
+06/06/2025 20:19:22 [01/66] thermal_switch_te_c
+06/06/2025 20:19:22            Validating thermal_switch_te_c.json source data... FAILED!
+
+06/06/2025 20:19:22 C:\Users\luciv\Documents\Lucivaldo\CML\Idea\user_created\Foundry_X\source\thermal_switch_te_c\thermal_switch_te_c.json path does not exist. Please make sure the element source folder and files exist
+06/06/2025 20:19:22 [01/66] voa_stat_te_c
+06/06/2025 20:19:22            Validating voa_stat_te_c.json source data... FAILED!
+
+06/06/2025 20:19:22 C:\Users\luciv\Documents\Lucivaldo\CML\Idea\user_created\Foundry_X\source\voa_stat_te_c\voa_stat_te_c.json path does not exist. Please make sure the element source folder and files exist
+06/06/2025 20:19:22 [01/66] wg_back_annotation
+06/06/2025 20:19:22            Validating wg_back_annotation.json source data... FAILED!
+
+06/06/2025 20:19:22 C:\Users\luciv\Documents\Lucivaldo\CML\Idea\user_created\Foundry_X\source\wg_back_annotation\wg_back_annotation.json path does not exist. Please make sure the element source folder and files exist
+06/06/2025 20:19:22 [01/66] wg_backscatter
+06/06/2025 20:19:22            Validating wg_backscatter.json source data... FAILED!
+
+06/06/2025 20:19:22 C:\Users\luciv\Documents\Lucivaldo\CML\Idea\user_created\Foundry_X\source\wg_backscatter\wg_backscatter.json path does not exist. Please make sure the element source folder and files exist
+06/06/2025 20:19:22 [01/66] wg_bend_90
+06/06/2025 20:19:22            Validating wg_bend_90.json source data... FAILED!
+
+06/06/2025 20:19:22 C:\Users\luciv\Documents\Lucivaldo\CML\Idea\user_created\Foundry_X\source\wg_bend_90\wg_bend_90.json path does not exist. Please make sure the element source folder and files exist
+06/06/2025 20:19:22 [01/66] wg_connector
+06/06/2025 20:19:22            Validating wg_connector.json source data... FAILED!
+
+06/06/2025 20:19:22 C:\Users\luciv\Documents\Lucivaldo\CML\Idea\user_created\Foundry_X\source\wg_connector\wg_connector.json path does not exist. Please make sure the element source folder and files exist
+06/06/2025 20:19:22 [01/66] wg_stat_strip_straight_c
+06/06/2025 20:19:22            Validating wg_stat_strip_straight_c.json source data... FAILED!
+
+06/06/2025 20:19:22 C:\Users\luciv\Documents\Lucivaldo\CML\Idea\user_created\Foundry_X\source\wg_stat_strip_straight_c\wg_stat_strip_straight_c.json path does not exist. Please make sure the element source folder and files exist
+06/06/2025 20:19:22 [01/66] wg_stat_strip_straight_parameterized
+06/06/2025 20:19:22            Validating wg_stat_strip_straight_parameterized.json source data... FAILED!
+
+06/06/2025 20:19:22 C:\Users\luciv\Documents\Lucivaldo\CML\Idea\user_created\Foundry_X\source\wg_stat_strip_straight_parameterized\wg_stat_strip_straight_parameterized.json path does not exist. Please make sure the element source folder and files exist
+06/06/2025 20:19:22 [01/66] wg_strip_arc_parameterized
+06/06/2025 20:19:22            Validating wg_strip_arc_parameterized.json source data... FAILED!
+
+06/06/2025 20:19:22 C:\Users\luciv\Documents\Lucivaldo\CML\Idea\user_created\Foundry_X\source\wg_strip_arc_parameterized\wg_strip_arc_parameterized.json path does not exist. Please make sure the element source folder and files exist
+06/06/2025 20:19:22 [01/66] wg_strip_sbend_parameterized
+06/06/2025 20:19:22            Validating wg_strip_sbend_parameterized.json source data... FAILED!
+
+06/06/2025 20:19:22 C:\Users\luciv\Documents\Lucivaldo\CML\Idea\user_created\Foundry_X\source\wg_strip_sbend_parameterized\wg_strip_sbend_parameterized.json path does not exist. Please make sure the element source folder and files exist
+06/06/2025 20:19:22 [01/66] wg_strip_straight_c
+06/06/2025 20:19:22            Validating wg_strip_straight_c.json source data... FAILED!
+
+06/06/2025 20:19:22 C:\Users\luciv\Documents\Lucivaldo\CML\Idea\user_created\Foundry_X\source\wg_strip_straight_c\wg_strip_straight_c.json path does not exist. Please make sure the element source folder and files exist
+06/06/2025 20:19:22 [01/66] wg_strip_straight_parameterized
+06/06/2025 20:19:22            Validating wg_strip_straight_parameterized.json source data... FAILED!
+
+06/06/2025 20:19:22 C:\Users\luciv\Documents\Lucivaldo\CML\Idea\user_created\Foundry_X\source\wg_strip_straight_parameterized\wg_strip_straight_parameterized.json path does not exist. Please make sure the element source folder and files exist
+06/06/2025 20:19:22 [01/66] container_element_child1
+06/06/2025 20:19:22            Validating container_element_child1.json source data... FAILED!
+
+06/06/2025 20:19:22 C:\Users\luciv\Documents\Lucivaldo\CML\Idea\user_created\Foundry_X\source\container_element_child1\container_element_child1.json path does not exist. Please make sure the element source folder and files exist
+06/06/2025 20:19:22 [01/66] container_element_child2
+06/06/2025 20:19:22            Validating container_element_child2.json source data... FAILED!
+
+06/06/2025 20:19:22 C:\Users\luciv\Documents\Lucivaldo\CML\Idea\user_created\Foundry_X\source\container_element_child2\container_element_child2.json path does not exist. Please make sure the element source folder and files exist
+06/06/2025 20:19:22 [01/66] container_example
+06/06/2025 20:19:22            Validating container_example.json source data... FAILED!
+
+06/06/2025 20:19:22 C:\Users\luciv\Documents\Lucivaldo\CML\Idea\user_created\Foundry_X\source\container_example\container_example.json path does not exist. Please make sure the element source folder and files exist
+06/06/2025 20:19:22 Cannot find lum_container_element_child1 in the library.
+06/06/2025 20:19:22 ERROR: CML Compiler exited prematurely with the following error:
+06/06/2025 20:19:22 Exception('Failed to find and remove sub_element container_element_child1 from .lib and/or interop header file')
+#########################################################END OF LOG SESSION###############################################################
+
+########################################################START OF LOG SESSION##############################################################
+
+CURRENT DATE AND TIME: 06/06/2025 20:19:23
+
+CML Compiler executable path: C:\Program Files\Lumerical\v242\CML_Compiler\bin\\cml-compiler.pyc
+Executed command: cml-compiler install -t Foundry_X.json 
+06/06/2025 20:19:27 -----------------------------------------------
+06/06/2025 20:19:27 Lumerical CML Compiler - Version: 3.9.3941
+06/06/2025 20:19:27 Compiled with INTERCONNECT - Version: 9.14.3941
+06/06/2025 20:19:27 -----------------------------------------------
+06/06/2025 20:19:27 Installing library...
+06/06/2025 20:19:27 ERROR: CML Compiler exited prematurely with the following error:
+06/06/2025 20:19:27 Exception('No cml file named Foundry_X.cml found at C:\\Users\\luciv\\Documents\\Lucivaldo\\CML\\Idea\\user_created\\Foundry_X\\artifacts\\interconnect')
+#########################################################END OF LOG SESSION###############################################################
+
+########################################################START OF LOG SESSION##############################################################
+
+CURRENT DATE AND TIME: 06/06/2025 20:19:28
+
+CML Compiler executable path: C:\Program Files\Lumerical\v242\CML_Compiler\bin\\cml-compiler.pyc
+Executed command: cml-compiler test -t Foundry_X.json 
+06/06/2025 20:19:30 -----------------------------------------------
+06/06/2025 20:19:30 Lumerical CML Compiler - Version: 3.9.3941
+06/06/2025 20:19:30 Compiled with INTERCONNECT - Version: 9.14.3941
+06/06/2025 20:19:30 -----------------------------------------------
+06/06/2025 20:19:30 Building QA scripts...
+06/06/2025 20:19:30 ERROR: CML Compiler exited prematurely with the following error:
+06/06/2025 20:19:30 IndexError('list index out of range')
+#########################################################END OF LOG SESSION###############################################################
+
+########################################################START OF LOG SESSION##############################################################
+
+CURRENT DATE AND TIME: 06/06/2025 20:19:50
+
+CML Compiler executable path: C:\Program Files\Lumerical\v242\CML_Compiler\bin\\cml-compiler.pyc
+Executed command: cml-compiler library -t Foundry_X.json -e wg_bend_90 
+06/06/2025 20:19:50 -----------------------------------------------
+06/06/2025 20:19:50 Lumerical CML Compiler - Version: 3.9.3941
+06/06/2025 20:19:50 Compiled with INTERCONNECT - Version: 9.14.3941
+06/06/2025 20:19:50 -----------------------------------------------
+06/06/2025 20:19:50 Building compact models...
+06/06/2025 20:19:54 [01/01] wg_bend_90
+06/06/2025 20:19:54            Validating wg_bend_90.json source data... FAILED!
+
+06/06/2025 20:19:54 C:\Users\luciv\Documents\Lucivaldo\CML\Idea\user_created\Foundry_X\source\wg_bend_90\wg_bend_90.json path does not exist. Please make sure the element source folder and files exist
+06/06/2025 20:19:54 "custom_MZM" added as user-created element.
+06/06/2025 20:19:54 Data validation has 0 warnings and 1 errors. See cml-compiler.state for details.
+06/06/2025 20:19:54 1 error(s) in building photonic models. Saved in "cml-compiler.state". If you cannot resolve the problem, please contact Lumercial with the log files for support: https://www.lumerical.com/support/
+06/06/2025 20:19:54 =======================================
+06/06/2025 20:19:54 Failed to build the following elements:
+06/06/2025 20:19:54 * wg_bend_90
+06/06/2025 20:19:54 
+06/06/2025 20:19:54 CML Compiler executed with specification defined in Foundry_X.json
+06/06/2025 20:19:54 
+06/06/2025 20:19:54 
+06/06/2025 20:19:54 #############################################
+06/06/2025 20:19:54 Finished compiling your Foundry_X library!
+06/06/2025 20:19:54 CML Compiler outputs are located at C:\Users\luciv\Documents\Lucivaldo\CML\Idea\user_created\Foundry_X\artifacts.
+06/06/2025 20:19:54 
+06/06/2025 20:19:54 	* INTERCONNECT CML files: C:\Users\luciv\Documents\Lucivaldo\CML\Idea\user_created\Foundry_X\artifacts\interconnect
+#########################################################END OF LOG SESSION###############################################################
+
+########################################################START OF LOG SESSION##############################################################
+
+CURRENT DATE AND TIME: 06/06/2025 20:19:55
+
+CML Compiler executable path: C:\Program Files\Lumerical\v242\CML_Compiler\bin\\cml-compiler.pyc
+Executed command: cml-compiler install -t Foundry_X.json 
+06/06/2025 20:19:59 -----------------------------------------------
+06/06/2025 20:19:59 Lumerical CML Compiler - Version: 3.9.3941
+06/06/2025 20:19:59 Compiled with INTERCONNECT - Version: 9.14.3941
+06/06/2025 20:19:59 -----------------------------------------------
+06/06/2025 20:19:59 Installing library...
+06/06/2025 20:19:59 Installed library! Library (CML) information:
+06/06/2025 20:19:59 {
+06/06/2025 20:19:59   "INTERCONNECT Version": "9.14.3941",
+06/06/2025 20:19:59   "Library Name": "Foundry_X",
+06/06/2025 20:19:59   "Library Version": "4.0"
+06/06/2025 20:19:59 }
+06/06/2025 20:19:59 
+06/06/2025 20:19:59 CML Compiler executed with specification defined in Foundry_X.json
+#########################################################END OF LOG SESSION###############################################################
+
+########################################################START OF LOG SESSION##############################################################
+
+CURRENT DATE AND TIME: 06/06/2025 20:20:00
+
+CML Compiler executable path: C:\Program Files\Lumerical\v242\CML_Compiler\bin\\cml-compiler.pyc
+Executed command: cml-compiler test -t Foundry_X.json -e wg_bend_90 
+06/06/2025 20:20:03 -----------------------------------------------
+06/06/2025 20:20:03 Lumerical CML Compiler - Version: 3.9.3941
+06/06/2025 20:20:03 Compiled with INTERCONNECT - Version: 9.14.3941
+06/06/2025 20:20:03 -----------------------------------------------
+06/06/2025 20:20:03 Building QA scripts...
+06/06/2025 20:20:03 ERROR: CML Compiler exited prematurely with the following error:
+06/06/2025 20:20:03 IndexError('list index out of range')
+#########################################################END OF LOG SESSION###############################################################
+
+########################################################START OF LOG SESSION##############################################################
+
+CURRENT DATE AND TIME: 07/06/2025 07:39:54
+
+CML Compiler executable path: C:\Program Files\Lumerical\v242\CML_Compiler\bin\\cml-compiler.pyc
+Executed command: cml-compiler library -t Foundry_X.json -e wg_bend_90 
+07/06/2025 07:39:54 -----------------------------------------------
+07/06/2025 07:39:54 Lumerical CML Compiler - Version: 3.9.3941
+07/06/2025 07:39:54 Compiled with INTERCONNECT - Version: 9.14.3941
+07/06/2025 07:39:54 -----------------------------------------------
+07/06/2025 07:39:55 Building compact models...
+07/06/2025 07:39:57 [01/01] wg_bend_90
+07/06/2025 07:39:57            Validating wg_bend_90.json source data... FAILED!
+
+07/06/2025 07:39:57 C:\Users\luciv\Documents\Lucivaldo\CML\Idea\user_created\Foundry_X\source\wg_bend_90\wg_bend_90.json path does not exist. Please make sure the element source folder and files exist
+07/06/2025 07:39:57 "custom_MZM" added as user-created element.
+07/06/2025 07:39:57 Data validation has 0 warnings and 1 errors. See cml-compiler.state for details.
+07/06/2025 07:39:57 1 error(s) in building photonic models. Saved in "cml-compiler.state". If you cannot resolve the problem, please contact Lumercial with the log files for support: https://www.lumerical.com/support/
+07/06/2025 07:39:57 =======================================
+07/06/2025 07:39:57 Failed to build the following elements:
+07/06/2025 07:39:57 * wg_bend_90
+07/06/2025 07:39:57 
+07/06/2025 07:39:57 CML Compiler executed with specification defined in Foundry_X.json
+07/06/2025 07:39:57 
+07/06/2025 07:39:57 
+07/06/2025 07:39:57 #############################################
+07/06/2025 07:39:57 Finished compiling your Foundry_X library!
+07/06/2025 07:39:57 CML Compiler outputs are located at C:\Users\luciv\Documents\Lucivaldo\CML\Idea\user_created\Foundry_X\artifacts.
+07/06/2025 07:39:57 
+07/06/2025 07:39:57 	* INTERCONNECT CML files: C:\Users\luciv\Documents\Lucivaldo\CML\Idea\user_created\Foundry_X\artifacts\interconnect
+#########################################################END OF LOG SESSION###############################################################
+
+########################################################START OF LOG SESSION##############################################################
+
+CURRENT DATE AND TIME: 07/06/2025 07:39:58
+
+CML Compiler executable path: C:\Program Files\Lumerical\v242\CML_Compiler\bin\\cml-compiler.pyc
+Executed command: cml-compiler install -t Foundry_X.json 
+07/06/2025 07:40:01 -----------------------------------------------
+07/06/2025 07:40:01 Lumerical CML Compiler - Version: 3.9.3941
+07/06/2025 07:40:01 Compiled with INTERCONNECT - Version: 9.14.3941
+07/06/2025 07:40:01 -----------------------------------------------
+07/06/2025 07:40:01 Installing library...
+07/06/2025 07:40:01 Installed library! Library (CML) information:
+07/06/2025 07:40:01 {
+07/06/2025 07:40:01   "INTERCONNECT Version": "9.14.3941",
+07/06/2025 07:40:01   "Library Name": "Foundry_X",
+07/06/2025 07:40:01   "Library Version": "4.0"
+07/06/2025 07:40:01 }
+07/06/2025 07:40:01 
+07/06/2025 07:40:01 CML Compiler executed with specification defined in Foundry_X.json
+#########################################################END OF LOG SESSION###############################################################
+
+########################################################START OF LOG SESSION##############################################################
+
+CURRENT DATE AND TIME: 07/06/2025 07:40:03
+
+CML Compiler executable path: C:\Program Files\Lumerical\v242\CML_Compiler\bin\\cml-compiler.pyc
+Executed command: cml-compiler test -t Foundry_X.json -e wg_bend_90 
+07/06/2025 07:40:05 -----------------------------------------------
+07/06/2025 07:40:05 Lumerical CML Compiler - Version: 3.9.3941
+07/06/2025 07:40:05 Compiled with INTERCONNECT - Version: 9.14.3941
+07/06/2025 07:40:05 -----------------------------------------------
+07/06/2025 07:40:05 Building QA scripts...
+07/06/2025 07:40:05 ERROR: CML Compiler exited prematurely with the following error:
+07/06/2025 07:40:05 IndexError('list index out of range')
+#########################################################END OF LOG SESSION###############################################################
+
+########################################################START OF LOG SESSION##############################################################
+
+CURRENT DATE AND TIME: 07/06/2025 07:51:43
+
+CML Compiler executable path: C:\Program Files\Lumerical\v242\CML_Compiler\bin\\cml-compiler.pyc
+Executed command: cml-compiler library -t Foundry_X.json -e wg_bend_90 
+07/06/2025 07:51:43 -----------------------------------------------
+07/06/2025 07:51:43 Lumerical CML Compiler - Version: 3.9.3941
+07/06/2025 07:51:43 Compiled with INTERCONNECT - Version: 9.14.3941
+07/06/2025 07:51:43 -----------------------------------------------
+07/06/2025 07:51:43 Building compact models...
+07/06/2025 07:51:46 [01/01] wg_bend_90
+07/06/2025 07:51:46            Validating wg_bend_90.json source data... FAILED!
+
+07/06/2025 07:51:46 C:\Users\luciv\Documents\Lucivaldo\CML\Idea\user_created\Foundry_X\source\wg_bend_90\wg_bend_90.json path does not exist. Please make sure the element source folder and files exist
+07/06/2025 07:51:46 "custom_MZM" added as user-created element.
+07/06/2025 07:51:46 Data validation has 0 warnings and 1 errors. See cml-compiler.state for details.
+07/06/2025 07:51:46 1 error(s) in building photonic models. Saved in "cml-compiler.state". If you cannot resolve the problem, please contact Lumercial with the log files for support: https://www.lumerical.com/support/
+07/06/2025 07:51:46 =======================================
+07/06/2025 07:51:46 Failed to build the following elements:
+07/06/2025 07:51:46 * wg_bend_90
+07/06/2025 07:51:46 
+07/06/2025 07:51:46 CML Compiler executed with specification defined in Foundry_X.json
+07/06/2025 07:51:46 
+07/06/2025 07:51:46 
+07/06/2025 07:51:46 #############################################
+07/06/2025 07:51:46 Finished compiling your Foundry_X library!
+07/06/2025 07:51:46 CML Compiler outputs are located at C:\Users\luciv\Documents\Lucivaldo\CML\Idea\user_created\Foundry_X\artifacts.
+07/06/2025 07:51:46 
+07/06/2025 07:51:46 	* INTERCONNECT CML files: C:\Users\luciv\Documents\Lucivaldo\CML\Idea\user_created\Foundry_X\artifacts\interconnect
+#########################################################END OF LOG SESSION###############################################################
+
+########################################################START OF LOG SESSION##############################################################
+
+CURRENT DATE AND TIME: 07/06/2025 07:51:48
+
+CML Compiler executable path: C:\Program Files\Lumerical\v242\CML_Compiler\bin\\cml-compiler.pyc
+Executed command: cml-compiler install -t Foundry_X.json 
+07/06/2025 07:51:51 -----------------------------------------------
+07/06/2025 07:51:51 Lumerical CML Compiler - Version: 3.9.3941
+07/06/2025 07:51:51 Compiled with INTERCONNECT - Version: 9.14.3941
+07/06/2025 07:51:51 -----------------------------------------------
+07/06/2025 07:51:51 Installing library...
+07/06/2025 07:51:51 Installed library! Library (CML) information:
+07/06/2025 07:51:51 {
+07/06/2025 07:51:51   "INTERCONNECT Version": "9.14.3941",
+07/06/2025 07:51:51   "Library Name": "Foundry_X",
+07/06/2025 07:51:51   "Library Version": "4.0"
+07/06/2025 07:51:51 }
+07/06/2025 07:51:51 
+07/06/2025 07:51:51 CML Compiler executed with specification defined in Foundry_X.json
+#########################################################END OF LOG SESSION###############################################################
+
+########################################################START OF LOG SESSION##############################################################
+
+CURRENT DATE AND TIME: 07/06/2025 07:51:52
+
+CML Compiler executable path: C:\Program Files\Lumerical\v242\CML_Compiler\bin\\cml-compiler.pyc
+Executed command: cml-compiler test -t Foundry_X.json -e wg_bend_90 
+07/06/2025 07:51:54 -----------------------------------------------
+07/06/2025 07:51:54 Lumerical CML Compiler - Version: 3.9.3941
+07/06/2025 07:51:54 Compiled with INTERCONNECT - Version: 9.14.3941
+07/06/2025 07:51:54 -----------------------------------------------
+07/06/2025 07:51:54 Building QA scripts...
+07/06/2025 07:51:55 ERROR: CML Compiler exited prematurely with the following error:
+07/06/2025 07:51:55 IndexError('list index out of range')
+#########################################################END OF LOG SESSION###############################################################

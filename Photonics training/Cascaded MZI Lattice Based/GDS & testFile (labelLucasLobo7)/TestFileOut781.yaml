@@ -1,0 +1,44 @@
+Devices:
+  LucasLobo7:
+    device_id: LucasLobo7
+    device_type: openEBL
+    electricalCoordinates: []
+    opticalCoordinates:
+    - -293.0
+    - 63.0
+    polarization: TE
+    sequences:
+    - Test1(wavelength_sweep_ida)
+    wavelength: '1550'
+Sequences:
+  Test1(wavelength_sweep_ida):
+    Runtime: 8.75
+    results_info:
+      csv: 'True'
+      foldername: ''
+      legend: 'True'
+      mat: 'True'
+      num_plots: '1'
+      pdf: 'True'
+      pkl: 'False'
+      plottitle: WavelengthSweep
+      save_location: ''
+      saveplot: 'True'
+      visual: 'True'
+      xscale: '1'
+      xtitle: Wavelength (nm)
+      yscale: '1'
+      ytitle: Power (dBm)
+    variables:
+      Initialrange: '-20'
+      Laser Output: High Power
+      Mode: CONT
+      Numscans: '1'
+      Power: '1'
+      Power Unit: dBm
+      RangeDec: '20'
+      Start: '1530'
+      Step: '0.01'
+      Stop: '1565'
+      Sweep Speed: auto
+      Upper Limit: '0'

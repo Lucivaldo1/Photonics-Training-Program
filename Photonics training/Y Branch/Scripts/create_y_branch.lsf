@@ -1,0 +1,84 @@
+switchtolayout();
+
+#configurações de altura, largura e espessura
+wg_width = 450e-9;
+wg_height = 220e-9;
+x_span_dvc = 5e-6;
+y_span_dvc = 5e-6;
+raio = 5e-6;
+
+#sbend superior
+#primeiro arco
+addobject("90_bend_wg");
+set("name", "upper1");
+set("radius", raio);
+set("base width", wg_width);
+set("first axis", "x");
+set("rotation 1", 180);
+set("x", 0);
+set("y", 0);
+set("z", 0);
+#segundo arco
+addobject("90_bend_wg");
+set("name", "upper2");
+set("base width", wg_width);
+set("radius", raio);
+set("first axis", "y");
+set("rotation 1", 180);
+set("x", 2*raio);
+set("y", 0);
+set("z", 0);
+
+#sbend inferior
+#primeiro arco
+addobject("90_bend_wg");
+set("name", "lower1");
+set("base width", wg_width);
+set("radius", raio);
+set("x", 0);
+set("y", -2*raio);
+set("z", 0);
+#segundo arco
+addobject("90_bend_wg");
+set("name", "lower2");
+set("base width", wg_width);
+set("radius", raio);
+set("first axis", "x");
+set("rotation 1", 180);
+set("second axis", "y");
+set("rotation 2", -180);
+set("x", 2*raio);
+set("y", -2*raio);
+set("z", 0);
+
+#guias de cada porta
+
+addrect();
+set("name", "in");
+set("x span", 2e-6);
+set("y span", wg_width);
+set("z span", wg_height);
+set("material", "Si (Silicon) - Palik");
+set("x", -1e-6);
+set("y", -raio);
+set("z", 0);
+
+addrect();
+set("name", "out_1");
+set("x span", 2e-6);
+set("y span", wg_width);
+set("z span", wg_height);
+set("material", "Si (Silicon) - Palik");
+set("x", raio*2 + 1e-6);
+set("y", raio );
+set("z", 0);
+
+addrect();
+set("name", "out_2");
+set("x span", 2e-6);
+set("y span", wg_width);
+set("z span", wg_height);
+set("material", "Si (Silicon) - Palik");
+set("x", raio*2 + 1e-6);
+set("y", -raio*3);
+set("z", 0);

@@ -1,0 +1,16 @@
+% X-coord, Y-coord, Polarization, wavelength, type, deviceID, params 
+-312, 191, TE, 1550, openEBL, Lucivaldo, CWDM, MZI, INPUT1
+-312, -63, TE, 1550, openEBL, Lucivaldo, CWDMMZIOUTPUT1
+-312, -191, TE, 1550, openEBL, Lucivaldo, CWDMMZIOUTPUT2
+217, -191, TE, 1550, openEBL, Lucivaldo, CWDMMZIOUTPUT8
+157, 191, TE, 1550, openEBL, Lucivaldo, CWDM, MZI, INPUT2
+217, 191, TE, 1550, openEBL, Lucivaldo, CWDM, MZI, INPUT3
+157, 63, TE, 1550, openEBL, Lucivaldo, CWDMMZIOUTPUT3
+217, 63, TE, 1550, openEBL, Lucivaldo, CWDMMZIOUTPUT4
+157, -63, TE, 1550, openEBL, Lucivaldo, CWDMMZIOUTPUT5
+217, -63, TE, 1550, openEBL, Lucivaldo, CWDMMZIOUTPUT6
+157, -191, TE, 1550, openEBL, Lucivaldo, CWDMMZIOUTPUT7
+
+% X-coord, Y-coord, deviceID, padName, params 
+
+% X-coord, Y-coord, recipeID, params 

@@ -1,0 +1,131 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<lumerical_lookup_table version="1.0" name = "directional_coupler">
+<association>
+    <design>
+        <value name="Lc" type="double">0</value>
+    </design>
+    <extracted>
+        <value name="s-param" type="string">dc_gap=200nm_Lc=0um.txt</value>
+    </extracted>
+</association>
+<association>
+    <design>
+        <value name="Lc" type="double">3e-06</value>
+    </design>
+    <extracted>
+        <value name="s-param" type="string">dc_gap=200nm_Lc=3um.txt</value>
+    </extracted>
+</association>
+<association>
+    <design>
+        <value name="Lc" type="double">6e-06</value>
+    </design>
+    <extracted>
+        <value name="s-param" type="string">dc_gap=200nm_Lc=6um.txt</value>
+    </extracted>
+</association>
+<association>
+    <design>
+        <value name="Lc" type="double">9e-06</value>
+    </design>
+    <extracted>
+        <value name="s-param" type="string">dc_gap=200nm_Lc=9um.txt</value>
+    </extracted>
+</association>
+<association>
+    <design>
+        <value name="Lc" type="double">1.2e-05</value>
+    </design>
+    <extracted>
+        <value name="s-param" type="string">dc_gap=200nm_Lc=12um.txt</value>
+    </extracted>
+</association>
+<association>
+    <design>
+        <value name="Lc" type="double">1.5e-05</value>
+    </design>
+    <extracted>
+        <value name="s-param" type="string">dc_gap=200nm_Lc=15um.txt</value>
+    </extracted>
+</association>
+<association>
+    <design>
+        <value name="Lc" type="double">1.8e-05</value>
+    </design>
+    <extracted>
+        <value name="s-param" type="string">dc_gap=200nm_Lc=18um.txt</value>
+    </extracted>
+</association>
+<association>
+    <design>
+        <value name="Lc" type="double">2.1000000000000002e-05</value>
+    </design>
+    <extracted>
+        <value name="s-param" type="string">dc_gap=200nm_Lc=21um.txt</value>
+    </extracted>
+</association>
+<association>
+    <design>
+        <value name="Lc" type="double">2.4e-05</value>
+    </design>
+    <extracted>
+        <value name="s-param" type="string">dc_gap=200nm_Lc=24um.txt</value>
+    </extracted>
+</association>
+<association>
+    <design>
+        <value name="Lc" type="double">2.7e-05</value>
+    </design>
+    <extracted>
+        <value name="s-param" type="string">dc_gap=200nm_Lc=27um.txt</value>
+    </extracted>
+</association>
+<association>
+    <design>
+        <value name="Lc" type="double">3e-05</value>
+    </design>
+    <extracted>
+        <value name="s-param" type="string">dc_gap=200nm_Lc=30um.txt</value>
+    </extracted>
+</association>
+<association>
+    <design>
+        <value name="Lc" type="double">3.3e-05</value>
+    </design>
+    <extracted>
+        <value name="s-param" type="string">dc_gap=200nm_Lc=33um.txt</value>
+    </extracted>
+</association>
+<association>
+    <design>
+        <value name="Lc" type="double">3.6e-05</value>
+    </design>
+    <extracted>
+        <value name="s-param" type="string">dc_gap=200nm_Lc=36um.txt</value>
+    </extracted>
+</association>
+<association>
+    <design>
+        <value name="Lc" type="double">3.9e-05</value>
+    </design>
+    <extracted>
+        <value name="s-param" type="string">dc_gap=200nm_Lc=39um.txt</value>
+    </extracted>
+</association>
+<association>
+    <design>
+        <value name="Lc" type="double">4.2000000000000004e-05</value>
+    </design>
+    <extracted>
+        <value name="s-param" type="string">dc_gap=200nm_Lc=42um.txt</value>
+    </extracted>
+</association>
+<association>
+    <design>
+        <value name="Lc" type="double">4.5e-05</value>
+    </design>
+    <extracted>
+        <value name="s-param" type="string">dc_gap=200nm_Lc=45um.txt</value>
+    </extracted>
+</association>
+</lumerical_lookup_table>

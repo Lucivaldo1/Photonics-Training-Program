@@ -1,0 +1,446 @@
+###########################################################
+# Script file: Waveguides_FDE_dataCMLCompile_statistical_updatedr.lsf
+#
+# Description: This file can be used to extract the parameters
+#	required by the CML Compiler to build a waveguide
+#	element.
+#
+## Notes:
+# (1) See USER-DEFINED PARAMETERS section for nominal model required input.
+# (2) See USER-DEFINED STATISTICAL PARAMETERS section for statistical model
+#     required input.
+# (3) See USER-DEFINED SIMULATION PARAMETERS section for required input to
+#     simulations used to extraction statistical model data. 
+#
+# Copyright 2023, Ansys Inc.
+###########################################################
+clear;
+
+###########################################################
+## USER-DEFINED PARAMETERS
+# These parameters must be set by the user
+###########################################################
+
+mode_numbers = [1;2]; # Numbers of the modes used by the CML Compiler element
+wavelength_data = 1.55e-6; # m; Center wavelength for the element built by the CML Compiler
+
+# Temperature data for CML Compiler model (not used in the simulation)
+temperature_data = 300; # K
+dneff_dT = [0.001; 0.0001];# 1/K
+
+# Additional loss to account for effects not captured in simulation (for example surface roughness)
+additional_loss = [300;200]; # dB/m
+
+## USER-DEFINED STATISTICAL PARAMETERS:
+# These parameters must be set by the user. These are based on process/foundry data.
+
+## 1. Number of statistical parameters
+N = 3;
+stat_parameters = cell(N);
+
+## 2. Statistical distribution data for delta_height
+par = struct;
+par.name = "delta_height";
+par.mean = 0;
+par.corners = [-2.4,2.4]; # [corner_1 delta_height, corner_2 delta_height]
+par.DEV = struct;
+par.DEV.distribution = "normal";
+par.DEV.sigma = 0.8; # standard deviation of Gaussian distribution in Monte Carlo. 
+par.LOT = struct;
+par.LOT.LOTGROUP = "lot_delta_height";
+par.slope_loss = [0,0];
+stat_parameters{1} = par;
+
+## 3. Statistical distribution data for delta_width
+par = struct;
+par.name = "delta_width";
+par.mean = 0; 
+par.corners = [-2.4,2.4]; # [corner_1 delta_height, corner_2 delta_width]
+par.DEV = struct;
+par.DEV.distribution = "normal";
+par.DEV.sigma = 0.8; # standard deviation of Gaussian distribution
+par.LOT = struct;
+par.LOT.LOTGROUP = "lot_delta_width";
+par.slope_loss = [0,0];
+stat_parameters{2} = par;
+
+## 4. Statistical distribution data for delta_loss. 
+# This data would be extracted from experiment
+par = struct;
+par.name = "delta_loss";
+par.mean = 0;
+par.corners = [60,-35]; # [corner_1 delta_height, corner_2 delta_width]
+par.DEV = struct;
+par.DEV.distribution = "pearson4";
+par.DEV.sigma = 15; # standard deviation of Pearson IV distribution
+par.DEV.gamma1 = 4; # skewness of Pearson IV distribution
+par.DEV.beta2 = 1000; # kurtosis of Pearson IV distribution
+par.LOT = struct;
+par.LOT.distribution = "pearson4";
+par.LOT.sigma = 20; # standard deviation of Pearson IV distribution
+par.LOT.gamma1 = 4; # skewness of Pearson IV distribution
+par.LOT.beta2 = 1000; # kurtosis of Pearson IV distribution
+par.slope_loss = [1,0.7];
+par.slope_neff = [0,0];
+par.slope_ng = [0,0];
+stat_parameters{3} = par;
+
+# plot Pearson IV
+loss = linspace(-100,100,100);
+pdf_loss = pearson4pdf(loss,
+                       stat_parameters{3}.mean,
+                       stat_parameters{3}.DEV.sigma,
+                       stat_parameters{3}.DEV.gamma1,
+                       stat_parameters{3}.DEV.beta2);
+plot(loss,pdf_loss,'Loss (dB/m)','Probability');
+
+## USER-DEFINED SIMULATION PARAMETERS:
+# In the compact model, the statistical parameter sensitivity is introduced as a slope:
+#
+# e.g. neff = neff (nominal) + slope_neff*d_stat_param
+# where slope_neff = d_neff/d_stat_param
+#
+# We run simulations to extract the sensitivities (slopes) of the waveguide properties with  
+# respect to the statistical parameters.  The slope is calculated after extracting the waveguide 
+# properties from a pair of simulations, each with different parameter values. 
+#
+# The statistical parameter can be normalized - commonly with respect to its sigma - to conceal
+# the absolute statistical variation to the CML user, while still enabling them to run
+# corner and Monte Carlo analysis. 
+#
+# In the case where we normalize to sigma, d_stat_param is unitless, as are the neff and ng slopes.  
+# 
+# - delta_height_sigma: absolute sigma value [m]
+# - delta_height_range: absolute delta_height values [m] for which the waveguide properties are 
+#   extracted to calculate the height sensitivity slope
+# - delta_height_norm: delta_height normalization constant [m]
+#
+#   These parameters are used to calculate slope_neff for delta_height (normalized by delta_height_norm):
+#   slope_neff = [neff(2)-neff(1)]/([delta_height_range(2)-delta_height_range(1)]/delta_height_norm),
+
+# 1. delta_height simulation data
+delta_height_sigma = 2e-9; 
+delta_height_range = [-delta_height_sigma, delta_height_sigma];
+delta_height_norm = delta_height_sigma; # 
+
+# 2. delta_width simulation data
+delta_width_sigma = 4e-9; 
+delta_width_range = [-delta_width_sigma, delta_width_sigma]; 
+delta_width_norm = delta_width_sigma;
+
+## NOMINAL PARAMETER DATA EXTRACTED FROM SIMULATION:
+###########################################################
+## Run simulation and extract results
+###########################################################
+
+switchtolayout;
+setanalysis("wavelength", wavelength_data);
+findmodes;
+
+n_modes = length(mode_numbers);
+
+mode_data=cell(length(mode_numbers));
+if ((n_modes!=length(mode_data)) or n_modes!=length(dneff_dT) or n_modes!=length(additional_loss)){ # Check that length of arrays is consistent
+?"Error: Length of data arrays is not consistent. Check: mode_data, mode_numbers, dneff_dT, additional_loss";
+break;
+}
+
+neff = loss = ng = D = matrix(n_modes);
+
+for(mode_ind=1:n_modes){ # Loop over selected modes
+    selectmode(mode_numbers(mode_ind));
+    setanalysis('track selected mode',1);
+    setanalysis('detailed dispersion calculation',1);
+    setanalysis('stop wavelength',wavelength_data);
+    setanalysis('number of points',1);
+    frequencysweep;
+    
+    
+    ## Extract results from frequency sweep:
+    neff(mode_ind) = real(getresult("FDE::data::frequencysweep","neff"));
+    loss(mode_ind) = additional_loss(mode_ind) + getresult("FDE::data::frequencysweep","loss"); # dB/m
+    ng(mode_ind) = c/getresult("FDE::data::frequencysweep","vg"); # m/s
+    D(mode_ind) = getresult("FDE::data::frequencysweep","D"); # s/m^2
+}
+
+## STATISTICAL PARAMETER DATA EXTRACTED FROM SIMULATION:
+
+## Run simulations to extract neff and ng slopes:
+nominal_width = getnamed("waveguide","x span");
+nominal_height = getnamed("waveguide","y span");
+
+neff_data = ng_data = matrix(n_modes,2);
+
+for (stat_param=1:2){ # Loop over statistical parameters that we need slope data for
+    for (i=1:2){ # Loop over the two simulations used to calculate the slope
+        switchtolayout;
+        if (stat_param==1){   
+            #delta_height sweep             
+            height = nominal_height + delta_height_range(i);
+            width = nominal_width;
+        }else{
+            #delta_width sweep    
+            height = nominal_height;
+            width = nominal_width + delta_width_range(i);
+        }
+        setnamed("::model","wg height",height);
+        setnamed("::model","wg width",width);
+        setanalysis("wavelength", wavelength_data);
+        findmodes;
+        
+        for(mode_ind=1:n_modes){ # Loop over selected modes
+            selectmode(mode_numbers(mode_ind));
+            setanalysis('track selected mode',1);
+            setanalysis('detailed dispersion calculation',1);
+            setanalysis('stop wavelength',wavelength_data);
+            setanalysis('number of points',1);
+            frequencysweep;
+            
+            
+            ## Extract results from frequency sweep:
+            neff_data(mode_ind,i) = real(getresult("FDE::data::frequencysweep","neff"));
+            ng_data(mode_ind,i) = c/getresult("FDE::data::frequencysweep","vg"); # m/s
+        }
+    }
+    
+    
+    if (stat_param==1){   
+        # delta_height slopes
+        stat_parameters{stat_param}.slope_neff = (neff_data(:,2)-neff_data(:,1))/(delta_height_range(2)-delta_height_range(1))*delta_height_norm;
+        stat_parameters{stat_param}.slope_ng = (ng_data(:,2)-ng_data(:,1))/(delta_height_range(2)-delta_height_range(1))*delta_height_norm;      
+        
+        plot(delta_height_range,transpose(neff_data),"delta_height","neff");
+        legend("TE","TM");
+        plot(delta_height_range,transpose(ng_data),"delta_height","ng");
+        legend("TE","TM");                   
+    }else{
+        # delta_width slopes
+        stat_parameters{stat_param}.slope_neff = (neff_data(:,2)-neff_data(:,1))/(delta_width_range(2)-delta_width_range(1))*delta_width_norm;
+        stat_parameters{stat_param}.slope_ng = (ng_data(:,2)-ng_data(:,1))/(delta_width_range(2)-delta_width_range(1))*delta_width_norm;        
+        
+        plot(delta_width_range,transpose(neff_data),"delta_height (nm)","neff");
+        legend("TE","TM");
+        plot(delta_width_range,transpose(ng_data),"delta_width (nm)","ng");
+        legend("TE","TM");
+    }
+}
+
+switchtolayout; #set parameters back to nominal
+height = nominal_height;
+width = nominal_width;
+setnamed("::model","wg height",height);
+setnamed("::model","wg width",width);
+
+    
+
+
+###########################################################
+## Create model source data in CML Compiler format
+###########################################################
+
+# General: includes the model description, prefix and notes
+general=struct;
+
+general.description='Foundry strip waveguide - C band';# Brief description of the model, visible to the end user
+general.prefix='WG'; # Appended to element names in INTERCONNECT
+
+general.notes=cell(2); # Notes for the end user
+general.notes{1}=struct;
+general.notes{1}.property='wavelength_range'; # Name of the note
+general.notes{1}.value='C-band (1530 - 1565 nm)'; # Information for the end user
+general.notes{2}=struct;
+general.notes{2}.property='temperature_range';
+general.notes{2}.value='Best accuracy between 273 and 373 K';
+
+# Ports: defines the ports for the element. Generally, this shouldn't need to be changed
+ports=struct;
+
+ports.opt_1=struct;
+ports.opt_1.dir='Bidirectional'; # Port's directionality - either "Input", "Output" or "Bidirectional"
+ports.opt_1.loc=0.5; # Placement of the port on whichever side it's on, as a value between 0 and 1
+ports.opt_1.name='opt_1'; # Name of the port, as a string
+ports.opt_1.order=1; # Order at which each port is listed in a netlist
+ports.opt_1.pos='Left'; # Side of the final model the port will be placed on - either "Left", "Top", "Right", or "Bottom"
+
+ports.opt_2=struct;
+ports.opt_2.dir='Bidirectional';
+ports.opt_2.loc=0.5;
+ports.opt_2.name='opt_2';
+ports.opt_2.order=2;
+ports.opt_2.pos='Right';
+
+# Parameters that may be visible and editable by the end user
+# Possible parameters depend on photonic model
+parameters=struct;
+
+parameters.temperature=struct; # Temperature parameter
+parameters.temperature.default='%temperature%';
+
+parameters.wg_length=struct; # Waveguide length parameter
+parameters.wg_length.annotate=0; # Parameter is annotated in INTERCONNECT schematic (1=true, 0=false)
+parameters.wg_length.default=1e-05; # Default value of parameter
+parameters.wg_length.max=1; # Maximum value of parameter
+parameters.wg_length.min=0; # Minimum value of parameter
+parameters.wg_length.name='wg_length'; # Name of parameter
+parameters.wg_length.unit='um'; # Units displayed in INTERCONNECT
+parameters.wg_length.visible_to_user=1; # Visible to end user (1=true, 0=false)
+
+# Model data: Data used to model the electrical and optical properties of the element
+# Required model data depends on photonic model
+# Data is included for both mode 1 and mode 2
+model_data=struct;
+
+model_data.photonic_model='waveguide_simple';
+
+# Mode information
+model_data.mode_data=mode_data;
+
+model_data.mode_data{1}=struct;
+model_data.mode_data{1}.ID=1;
+model_data.mode_data{1}.name='TE';
+
+model_data.mode_data{2}=struct;
+model_data.mode_data{2}.ID=2;
+model_data.mode_data{2}.name='TM';
+
+# Waveguide loss
+model_data.loss=matrix(2);
+model_data.loss(1)=loss(1);
+model_data.loss(2)=loss(2);
+
+# Effective index
+model_data.neff=matrix(2);
+model_data.neff(1)=neff(1);
+model_data.neff(2)=neff(2);
+
+# Group index
+model_data.ng=matrix(2);
+model_data.ng(1)=ng(1);
+model_data.ng(2)=ng(2);
+
+# Dispersion parameter
+model_data.D=matrix(2); 
+model_data.D(1)=D(1);
+model_data.D(2)=D(2);
+
+# Sensitivity of effective index to temperature
+model_data.dneff_dT=matrix(2);
+model_data.dneff_dT(1)=dneff_dT(1);
+model_data.dneff_dT(2)=dneff_dT(2);
+
+model_data.temperature=temperature_data;
+model_data.wavelength=wavelength_data;
+
+model_data.number_of_taps_estimation='disabled';
+
+# Parameters used by QA scripts
+QA=struct;
+
+# Parameters for the QA tests
+QA.parameters=struct;
+
+# Wavelength range for the QA tests (m)
+QA.parameters.wavelength=struct;
+QA.parameters.wavelength.max=1.565e-06;
+QA.parameters.wavelength.min=1.53e-06;
+
+# Relative tolerance for QA tests which verify the different figures of merit of the waveguide
+# If the simulated values differ from the values provided within the data file by more than this tolerance,
+# the QA tests will fail.
+QA.relative_tolerances=struct;
+QA.relative_tolerances.delay_time=0.01;
+QA.relative_tolerances.loss=1e-06;
+QA.relative_tolerances.neff=0.01;
+QA.relative_tolerances.ng=0.5;
+
+
+#Statistical parameters
+
+statistical=struct;
+statistical.QA=struct;
+statistical.QA.N_trials=50;
+statistical.QA.VA_N_trials=5;
+statistical.QA.VA_reference_data_available=1;
+statistical.QA.absolute_tolerances=struct;
+statistical.QA.absolute_tolerances.loss=0.1;
+statistical.QA.absolute_tolerances.neff=0.001;
+statistical.QA.absolute_tolerances.ng=0.09; #changed from 0.001 to 0.09 for custom model
+statistical.QA.enable_qa=1;
+statistical.QA.reference_data_available=1;
+
+statistical.parameters=struct;
+statistical.parameters.parameter_1=struct;
+statistical.parameters.parameter_1.GLOBAL=struct;
+statistical.parameters.parameter_1.GLOBAL.GLOBALGROUP='global_delta_height';
+statistical.parameters.parameter_1.LOCAL=struct;
+statistical.parameters.parameter_1.LOCAL.CORRGROUP='corr_delta_height';
+statistical.parameters.parameter_1.LOCAL.distribution='normal';
+statistical.parameters.parameter_1.LOCAL.sigma=0.8;
+statistical.parameters.parameter_1.corners=matrix(1,2);
+statistical.parameters.parameter_1.corners(1,1)=-2.4;
+statistical.parameters.parameter_1.corners(1,2)=2.4;
+statistical.parameters.parameter_1.mean=0;
+statistical.parameters.parameter_1.name='delta_height';
+statistical.parameters.parameter_1.slope_loss=matrix(1,2);
+statistical.parameters.parameter_1.slope_loss(1,1)=0;
+statistical.parameters.parameter_1.slope_loss(1,2)=0;
+statistical.parameters.parameter_1.slope_neff=matrix(2);
+statistical.parameters.parameter_1.slope_neff(1)=stat_parameters{1}.slope_neff(1);
+statistical.parameters.parameter_1.slope_neff(2)=stat_parameters{1}.slope_neff(2);
+statistical.parameters.parameter_1.slope_ng=matrix(2);
+statistical.parameters.parameter_1.slope_ng(1)=stat_parameters{1}.slope_ng(1);
+statistical.parameters.parameter_1.slope_ng(2)=stat_parameters{1}.slope_ng(2);
+statistical.parameters.parameter_2=struct;
+statistical.parameters.parameter_2.GLOBAL=struct;
+statistical.parameters.parameter_2.GLOBAL.GLOBALGROUP='global_delta_width';
+statistical.parameters.parameter_2.LOCAL=struct;
+statistical.parameters.parameter_2.LOCAL.CORRGROUP='corr_delta_width';
+statistical.parameters.parameter_2.LOCAL.distribution='normal';
+statistical.parameters.parameter_2.LOCAL.sigma=0.8;
+statistical.parameters.parameter_2.corners=matrix(1,2);
+statistical.parameters.parameter_2.corners(1,1)=-2.4;
+statistical.parameters.parameter_2.corners(1,2)=2.4;
+statistical.parameters.parameter_2.mean=0;
+statistical.parameters.parameter_2.name='delta_width';
+statistical.parameters.parameter_2.slope_loss=matrix(1,2);
+statistical.parameters.parameter_2.slope_loss(1,1)=0;
+statistical.parameters.parameter_2.slope_loss(1,2)=0;
+statistical.parameters.parameter_2.slope_neff=matrix(2);
+statistical.parameters.parameter_2.slope_neff(1)=stat_parameters{2}.slope_neff(1);
+statistical.parameters.parameter_2.slope_neff(2)=stat_parameters{2}.slope_neff(2);
+statistical.parameters.parameter_2.slope_ng=matrix(2);
+statistical.parameters.parameter_2.slope_ng(1)=stat_parameters{2}.slope_ng(1);
+statistical.parameters.parameter_2.slope_ng(2)=stat_parameters{2}.slope_ng(2);
+statistical.parameters.parameter_3=struct;
+statistical.parameters.parameter_3.GLOBAL=struct;
+statistical.parameters.parameter_3.GLOBAL.beta2=1000;
+statistical.parameters.parameter_3.GLOBAL.distribution='pearson4';
+statistical.parameters.parameter_3.GLOBAL.gamma1=4;
+statistical.parameters.parameter_3.GLOBAL.sigma=20;
+statistical.parameters.parameter_3.LOCAL=struct;
+statistical.parameters.parameter_3.LOCAL.beta2=1000;
+statistical.parameters.parameter_3.LOCAL.distribution='pearson4';
+statistical.parameters.parameter_3.LOCAL.gamma1=4;
+statistical.parameters.parameter_3.LOCAL.sigma=15;
+statistical.parameters.parameter_3.corners=matrix(1,2);
+statistical.parameters.parameter_3.corners(1,1)=60;
+statistical.parameters.parameter_3.corners(1,2)=-35;
+statistical.parameters.parameter_3.mean=0;
+statistical.parameters.parameter_3.name='delta_loss';
+statistical.parameters.parameter_3.slope_loss=matrix(1,2);
+statistical.parameters.parameter_3.slope_loss(1,1)=1;
+statistical.parameters.parameter_3.slope_loss(1,2)=0.7;
+statistical.parameters.parameter_3.slope_neff=matrix(1,2);
+statistical.parameters.parameter_3.slope_neff(1,1)=0;
+statistical.parameters.parameter_3.slope_neff(1,2)=0;
+statistical.parameters.parameter_3.slope_ng=matrix(1,2);
+statistical.parameters.parameter_3.slope_ng(1,1)=0;
+statistical.parameters.parameter_3.slope_ng(1,2)=0;
+
+
+###########################################################
+## Export model source data structs to JSON file
+###########################################################
+
+jsonsave("wg_stat_strip_straight_c.json", general, ports, parameters, model_data,statistical, QA);
+            

@@ -1,0 +1,56 @@
+FDTD Solutions Version 8.19.1466 (Mac 64bit)
+ expires (month/day/year): 4/1/2018
+using config file: /Users/lukasc/.config/Lumerical/FDTD Solutions.ini
+license host: lukascMacBook13
+current time: Sun Mar 11 11:36:43 2018
+Running on host: lukascMacBook13.local
+All processes are communicating and ready to proceed to simulation...
+Running fsp file: /Applications/Lumerical/FDTD Solutions/FDTD Solutions.app/Contents/MacOS/fdtd-engine -t 1 -remote /Users/lukasc/Documents/GitHub/SiEPIC_EBeam_PDK/Lumerical_EBeam_CML/EBeam-dev/fdtd/ebeam_dc_seriesrings/ebeam_dc_seriesrings_gap=100nm_radius1=3um_radius2=3um_width=500nm_thickness=220nm.fsp
+number of processors is 4
+processors are distributed as: 2x2x1
+Running 3D Simulation
+Starting meshing
+Simulation size in gridpoints: 98 x 120 x 22
+Refined 0 mesh cells (0%)
+Completed meshing!
+Meshing complete in 0.298074 seconds of CPU time
+93648 93648
+Starting meshing
+Simulation size in gridpoints: 98 x 120 x 22
+Refined 0 mesh cells (0%)
+Completed meshing!
+Meshing complete in 0.217131 seconds of CPU time
+76368 76368
+Starting meshing
+Simulation size in gridpoints: 98 x 120 x 22
+Refined 0 mesh cells (0%)
+Completed meshing!
+Meshing complete in 0.209083 seconds of CPU time
+46000 46000
+finished material properties
+Meshing Time: 0.589749 seconds, Init Electrical Material Time: 3.19991 seconds, Init Magnetic Material Time: 0.00272
+Using selected optimization level: 2
+Selecting 3d kernel for splitFieldDirection=0 and optLevel=2
+-----------------------------------------
+Beginning initialization of 3D Simulation
+Starting to add sources to simulation
+Adding 3D Mode source propagating in Y
+Starting to add boundary conditions to simulation
+Adding 3D PML BC
+Adding 3D Parallel BC
+Adding 3D PML BC
+Adding 3D Parallel BC
+Adding 3D Symmetric BC
+Adding 3D PML BC
+Starting to add monitors to Simulation
+Adding analysis monitor
+Adding 3D DFT monitor
+Adding 3D DFT monitor
+Adding 3D DFT monitor
+Adding 3D DFT monitor
+Finished initialization of 3D Simulation
+-----------------------------------------
+All processes are communicating and ready to proceed to simulation...
+Starting 24359 total iterations
+0% complete. Max time remaining: 3 mins, 10 secs. Auto Shutoff: 1
+2% complete. Max time remaining: 3 mins, 13 secs. Auto Shutoff: 1

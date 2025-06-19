@@ -1,0 +1,16 @@
+switchtolayout();
+
+wg_width = 450e-9;
+wg_height = 220e-9;
+x_span_dvc = 5e-6;
+y_span_dvc = 5e-6;
+
+addrect();
+set("name", "guide1");
+set("x span", 2e-6);
+set("y span", wg_width);
+set("z span", wg_height);
+set("material", "Si (Silicon) - Palik");
+set("x", -1e-6);
+set("y", 0);
+set("z", 0);

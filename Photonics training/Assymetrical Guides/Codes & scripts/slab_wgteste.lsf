@@ -1,0 +1,133 @@
+# Carregar o arquivo do layout e os dados
+
+load("slab_wg.ldf");
+
+cleardcard;
+
+
+
+# Parâmetros iniciais
+
+nf = 1.44;      # Índice de refração do núcleo
+
+ns = 1.33;      # Índice de refração do substrato
+
+lambda0 = 1.55e-6;  # Comprimento de onda em metros (1550 nm)
+
+
+k = 2*pi/lambda0;
+na = sqrt(nf^2 - ns^2);
+
+# Variação da espessura do núcleo em microns
+
+core_thickness_values = linspace(0, 2*4.469054e-06, 100);  # Espessura variando de 0.1 a 3 microns
+
+
+
+# Arrays para armazenar os resultados
+
+neff_values = matrix(1, length(core_thickness_values));
+
+neff_mode2 = matrix(1, length(core_thickness_values));
+
+neff_mode3 = matrix(1, length(core_thickness_values));
+
+neff_mode4 = matrix(1, length(core_thickness_values));
+
+neff_mode5 = matrix(1, length(core_thickness_values));
+
+neff_mode6 = matrix(1, length(core_thickness_values));
+
+neff_mode7 = matrix(1, length(core_thickness_values));
+
+neff_mode8 = matrix(1, length(core_thickness_values));
+
+neff_mode9 = matrix(1, length(core_thickness_values));
+
+neff_mode10 = matrix(1, length(core_thickness_values));
+
+neff_mode11 = matrix(1, length(core_thickness_values));
+
+neff_mode12 = matrix(1, length(core_thickness_values));
+
+V_values = matrix(1, length(core_thickness_values));
+
+
+
+wl_values = linspace(1530e-9, 1565e-9, 5);
+
+
+#for( j = 1:length(wl_values)){
+#	lambda0 = wl_values(j);
+#	?"comprimento de onda";
+#	?lambda0;
+
+# Loop para varrer diferentes espessuras do núcleo
+
+    for (i = 1:length(core_thickness_values)) {
+    
+        core_thickness = core_thickness_values(i);
+    
+        switchtolayout;
+        setnamed("film", "y span", core_thickness); 
+        
+        setnamed("air", "y", (core_thickness/2 + 2e-6));
+    
+        setnamed("substrate", "y", -(core_thickness/2 + 4.75e-6));
+        
+        
+        
+        setnamed("FDE", "mesh cells y", 2000);
+    
+    
+    
+        # 1.15 Okamoto
+    
+        V_values(i) = (pi / lambda0) * core_thickness * sqrt(nf^2 - ns^2);
+    
+    
+    
+        # Executar a simulação e encontrar o neff
+        findmodes;
+    
+        neff_values(i) = real(getdata("mode1", "neff"));
+    
+        neff_mode2(i) = real(getdata("mode2", "neff"));
+    
+        neff_mode3(i) = real(getdata("mode3", "neff"));
+            
+        if (neff_mode3(i)>1.33){ 
+            ?"a calculado:";
+            ?V_values(i-1)/(k*na);
+            #break;
+            }
+        neff_mode4(i) = real(getdata("mode4", "neff"));
+        
+        neff_mode5(i) = real(getdata("mode5", "neff"));
+        
+        neff_mode6(i) = real(getdata("mode6", "neff"));
+        
+        neff_mode7(i) = real(getdata("mode7", "neff"));
+        
+        neff_mode8(i) = real(getdata("mode8", "neff"));
+        
+        neff_mode9(i) = real(getdata("mode9", "neff"));
+        
+        neff_mode10(i) = real(getdata("mode10", "neff"));
+        
+        neff_mode11(i) = real(getdata("mode11", "neff"));
+        
+        neff_mode12(i) = real(getdata("mode12", "neff"));
+    }
+
+#}
+
+# Plotar o gráfico de neff versus V
+plot(V_values, neff_values,neff_mode2,neff_mode3,neff_mode4, 
+neff_mode5, neff_mode6, neff_mode7, neff_mode8, neff_mode9, neff_mode10, neff_mode11,
+ neff_mode12, "V", "neff", "neff X V");
+
+setplot("title","my figure"); 
+setplot("y min",1.33);
+setplot("y max",1.44);
+  

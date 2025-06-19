@@ -1,0 +1,67 @@
+
+########################################################START OF LOG SESSION##############################################################
+
+CURRENT DATE AND TIME: 05/06/2025 08:43:08
+
+CML Compiler executable path: C:\Program Files\Lumerical\v242\CML_Compiler\bin\\cml-compiler.pyc
+Executed command: cml-compiler template -n lumfoundry_template 
+05/06/2025 08:43:08 -----------------------------------------------
+05/06/2025 08:43:08 Lumerical CML Compiler - Version: 3.9.3941
+05/06/2025 08:43:08 Compiled with INTERCONNECT - Version: 9.14.3941
+05/06/2025 08:43:08 -----------------------------------------------
+05/06/2025 08:43:09 Deploying lumfoundry_template...
+05/06/2025 08:43:09 Extracted default foundry template to C:\Users\luciv\Documents\Lucivaldo\CML\Idea\user_created\lumfoundry_template
+#########################################################END OF LOG SESSION###############################################################
+
+########################################################START OF LOG SESSION##############################################################
+
+CURRENT DATE AND TIME: 05/06/2025 09:09:34
+
+CML Compiler executable path: C:\Program Files\Lumerical\v242\CML_Compiler\bin\\cml-compiler.pyc
+Executed command: cml-compiler template -n Foundry_X 
+05/06/2025 09:09:34 -----------------------------------------------
+05/06/2025 09:09:34 Lumerical CML Compiler - Version: 3.9.3941
+05/06/2025 09:09:34 Compiled with INTERCONNECT - Version: 9.14.3941
+05/06/2025 09:09:34 -----------------------------------------------
+05/06/2025 09:09:34 Deploying lumfoundry_template...
+05/06/2025 09:09:35 Extracted default foundry template to C:\Users\luciv\Documents\Lucivaldo\CML\Idea\user_created\Foundry_X
+#########################################################END OF LOG SESSION###############################################################
+
+########################################################START OF LOG SESSION##############################################################
+
+CURRENT DATE AND TIME: 05/06/2025 09:15:19
+
+CML Compiler executable path: C:\Program Files\Lumerical\v242\CML_Compiler\bin\\cml-compiler.pyc
+Executed command: cml-compiler status -t Foundry_X.json -c 
+05/06/2025 09:15:19 ERROR: CML Compiler exited prematurely with the following error:
+05/06/2025 09:15:19 FileNotFoundError('Failed to located foundry directory: ')
+#########################################################END OF LOG SESSION###############################################################
+
+########################################################START OF LOG SESSION##############################################################
+
+CURRENT DATE AND TIME: 05/06/2025 09:15:20
+
+CML Compiler executable path: C:\Program Files\Lumerical\v242\CML_Compiler\bin\\cml-compiler.pyc
+Executed command: cml-compiler template -n lumfoundry_template 
+05/06/2025 09:15:20 -----------------------------------------------
+05/06/2025 09:15:20 Lumerical CML Compiler - Version: 3.9.3941
+05/06/2025 09:15:20 Compiled with INTERCONNECT - Version: 9.14.3941
+05/06/2025 09:15:20 -----------------------------------------------
+05/06/2025 09:15:20 Deploying lumfoundry_template...
+05/06/2025 09:15:20 >>> Foundry template detected. Would you like to overwrite C:\Users\luciv\Documents\Lucivaldo\CML\Idea\user_created\lumfoundry_template? y/[n]: y
+05/06/2025 09:15:20 Extracted default foundry template to C:\Users\luciv\Documents\Lucivaldo\CML\Idea\user_created\lumfoundry_template
+#########################################################END OF LOG SESSION###############################################################
+
+########################################################START OF LOG SESSION##############################################################
+
+CURRENT DATE AND TIME: 06/06/2025 15:17:57
+
+CML Compiler executable path: C:\Program Files\Lumerical\v242\CML_Compiler\bin\\cml-compiler.pyc
+Executed command: cml-compiler template -n Foundry_X 
+06/06/2025 15:17:57 -----------------------------------------------
+06/06/2025 15:17:57 Lumerical CML Compiler - Version: 3.9.3941
+06/06/2025 15:17:57 Compiled with INTERCONNECT - Version: 9.14.3941
+06/06/2025 15:17:57 -----------------------------------------------
+06/06/2025 15:17:58 Deploying lumfoundry_template...
+06/06/2025 15:17:58 Extracted default foundry template to C:\Users\luciv\Documents\Lucivaldo\CML\Idea\user_created\Foundry_X
+#########################################################END OF LOG SESSION###############################################################

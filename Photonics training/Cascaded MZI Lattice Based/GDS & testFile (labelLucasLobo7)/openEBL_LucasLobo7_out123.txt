@@ -1,0 +1,6 @@
+% X-coord, Y-coord, Polarization, wavelength, type, deviceID, params 
+-293, 63, TE, 1550, openEBL, LucasLobo7, comment
+
+% X-coord, Y-coord, deviceID, padName, params 
+
+% X-coord, Y-coord, recipeID, params 

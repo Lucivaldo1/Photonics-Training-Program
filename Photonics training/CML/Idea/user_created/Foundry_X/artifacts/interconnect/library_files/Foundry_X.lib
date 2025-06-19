@@ -1,0 +1,24 @@
+.LIB nominal
+
+.ENDL
+
+.LIB statistical
+.GLOBALGROUP global_delta_width=(normal,1.0)
+.GLOBALGROUP global_delta_height=(normal,1.0)
+.GLOBALGROUP global_delta_ridge_height=(normal,1.0)
+
+
+.CORRGROUP corr_delta_width=0.003
+.CORRGROUP corr_delta_height=0.01
+.CORRGROUP corr_delta_ridge_height=0.003
+
+
+.ENDL
+
+.LIB corner_1
+
+.ENDL
+
+.LIB corner_2
+
+.ENDL
