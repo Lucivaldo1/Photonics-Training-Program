@@ -1,1 +1,1 @@
-![Project Cover](./images/results.png)
+![Project Cover](./Images/results.png)
