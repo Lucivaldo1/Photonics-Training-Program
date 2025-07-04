@@ -1,1 +1,1 @@
-!\[Project Cover](./Images/comparison out 456.png.png)
+!\[Project Cover](./Images/comparison out 456.png)
